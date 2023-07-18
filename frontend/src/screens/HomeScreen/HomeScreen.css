@@ -1,0 +1,38 @@
+.home-screen {
+  background-color: #C9DEED;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.home-screen .overlap {
+  background-color: #ffffff8a;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 100%;
+  width: 95%;
+}
+
+.home-screen .h-1 {
+  color: #383838;
+  font-family: "Simple Handmade", Helvetica;
+  font-size: 94.3px;
+  font-weight: 400;
+  letter-spacing: -4.71px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  /* height: 100%; */
+  /* width: 100%; */
+  /* justify-content: center; */
+}

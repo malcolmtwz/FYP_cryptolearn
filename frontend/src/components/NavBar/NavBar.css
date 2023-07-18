@@ -1,0 +1,77 @@
+.nav-bar {
+    background-color: #333333;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 126px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+  }
+
+.nav-bar .title {
+    height: 87px;
+    left: 53px;
+    position: absolute;
+    top: 20px;
+    width: 363px;
+}
+
+.nav-bar .text-wrapper {
+    color: #61dafb;
+    font-family: "Mandali", Helvetica;
+    font-size: 22.3px;
+    font-weight: 400;
+    height: 26px;
+    left: 97px;
+    letter-spacing: -1.11px;
+    line-height: normal;
+    position: absolute;
+    top: 30px;
+    white-space: nowrap;
+    width: 264px;
+}
+
+.nav-bar .cryptography {
+    height: 87px;
+    left: 0;
+    object-fit: cover;
+    /* position: absolute; */
+    top: 0;
+    width: 82px;
+}
+
+.nav-bar .home-button-instance {
+    background-color: #4a4747 !important;
+    left: 453px !important;
+    position: absolute !important;
+    top: 0 !important;
+    text-decoration: none;
+}
+  
+
+.nav-bar .about-us-instance {
+    left: 1053px !important;
+    position: absolute !important;
+    top: 0 !important;
+    text-decoration: none;
+}
+
+
+.nav-bar .game-button-instance {
+    left: 853px !important;
+    position: absolute !important;
+    top: 0 !important;
+    text-decoration: none;
+}
+
+
+.nav-bar .notes-button-instance {
+    background-color: unset !important;
+    left: 653px !important;
+    position: absolute !important;
+    top: 0 !important;
+    text-decoration: none;
+}
+
