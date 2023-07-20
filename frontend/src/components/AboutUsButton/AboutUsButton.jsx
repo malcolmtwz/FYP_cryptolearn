@@ -8,7 +8,7 @@ function AboutUsButton({ className, aboutusImg }) {
       <Link to="/aboutus" className={`aboutus-button-instance ${className || ''}`}>
         <button className="aboutus-button">
             <img className="aboutus-img" alt="AboutUs img" src={aboutusImg} />
-            <div className="aboutus">AboutUs</div>
+            <div className="aboutus">About Us</div>
         </button>
       </Link>
     );

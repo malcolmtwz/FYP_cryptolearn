@@ -1,1 +1,1 @@
-export { default } from './GameButton.jsx';
+export { default} from './GameButton.jsx';

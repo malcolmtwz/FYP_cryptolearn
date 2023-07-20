@@ -1,0 +1,28 @@
+.side-bar {
+    background-color: #d6e4e78a;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 208px;
+}
+
+.subtitle {
+    height: 40px;
+}
+
+.side-bar .tutorial {
+    color: #61dafb;
+    font-family: "Mandali", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    height: 71px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 207px;
+}

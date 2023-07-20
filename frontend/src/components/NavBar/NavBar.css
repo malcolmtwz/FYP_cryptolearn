@@ -7,7 +7,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
-
+    /* flex-direction: row; */
   }
 
 .nav-bar .title {
@@ -16,6 +16,16 @@
     position: absolute;
     top: 20px;
     width: 363px;
+}
+
+.nav-bar .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+}
+  
+.nav-bar .button-group {
+    margin-right: 10px; 
 }
 
 .nav-bar .text-wrapper {
@@ -48,6 +58,7 @@
     position: absolute !important;
     top: 0 !important;
     text-decoration: none;
+    
 }
   
 
@@ -56,6 +67,7 @@
     position: absolute !important;
     top: 0 !important;
     text-decoration: none;
+    
 }
 
 

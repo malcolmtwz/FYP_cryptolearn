@@ -19,10 +19,12 @@ function NavBar() {
             <img className="cryptography" alt="Cryptography" src={cryptographyImage} />
             <div className="text-wrapper">Cryptography game title</div>
         </div>
-        <HomeButton     className="home-button-instance"    homeImg={homeImage} /> 
-        <NotesButton    className="notes-button-instance"   notesImg={notesImage} />
-        <GameButton     className="game-button-instance"    gameImg={gameImage} />
-        <AboutUsButton  className="about-us-instance"       aboutusImg={aboutImage}/>
+        <div className='button-group'>
+          <HomeButton     className="home-button-instance"    homeImg={homeImage} /> 
+          <NotesButton    className="notes-button-instance"   notesImg={notesImage} />
+          <GameButton     className="game-button-instance"    gameImg={gameImage} />
+          <AboutUsButton  className="about-us-instance"       aboutusImg={aboutImage}/>
+        </div>
     </div>
 
   );
