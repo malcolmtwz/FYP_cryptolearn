@@ -1,15 +1,18 @@
 import React from "react";
 import "./NotesScreen.css";
-// import SideBar from '../../components/SideBar/SideBar';
+import SideBar from '../../components/SideBar/SideBar';
 
 function NotesScreen() {
     return(
         
-        <div className="screen">
-            <div className="background">
+        <div className="notes-screen">
+            <div className="sidebar-container">
+                <SideBar />
+            </div>
+            <div className="notes-background">
             
             </div>
-        {/* <SideBar /> */}
+        
         </div>
     
     );

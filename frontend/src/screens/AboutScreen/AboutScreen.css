@@ -1,4 +1,4 @@
-.screen {
+.about-screen {
     background-color: #C9DEED;
     display: flex;
     /* flex-direction: row; */
@@ -9,7 +9,7 @@
     width: 100%;
   }
   
-  .screen .background {
+  .about-screen .about-background {
     background-color: #ffffff8a;
     /* top: 50%;
     left: 50%;

@@ -4,8 +4,8 @@ import "./AboutScreen.css";
 function AboutScreen() {
     return(
         
-        <div className="screen">
-            <div className="background">
+        <div className="about-screen">
+            <div className="about-background">
             
             </div>
         </div>
