@@ -1,15 +1,15 @@
 import React from "react";
-import "./NotesScreen.css";
+import "./CaesarScreen.css";
 // import SideBar from '../../components/SideBar/SideBar';
 
-function NotesScreen() {
+function CaesarScreen() {
     return(
         
-        <div className="notes-screen">
+        <div className="caesar-screen">
             {/* <div className="sidebar-container"> */}
                 {/* <SideBar /> */}
             {/* </div> */}
-            <div className="notes-background">
+            <div className="caesar-background">
             
             </div>
         
@@ -18,4 +18,4 @@ function NotesScreen() {
     );
 }
 
-export default NotesScreen;
+export default CaesarScreen;

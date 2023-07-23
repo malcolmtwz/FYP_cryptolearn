@@ -1,31 +1,36 @@
-.side-bar {
-    background-color: #acc8db;
-    /* background-color: rgba(0, 0, 0, 0.315); */
-    box-shadow: 4px 4px 4px #00000040;
-    height: 100%;
-    left: 0;
+.sidebar-container {
     display: flex;
-    flex-direction: column;
-    /* position: fixed; */
-    top: 0;
-    width: 100% ;
-    z-index: 1 ;
-}
-
-.subtitle {
-    height: 40px;
-}
-
-.side-bar .tutorial {
-    color: #61dafb;
-    font-family: "Mandali", Helvetica;
-    font-size: 36px;
-    font-weight: 400;
-    height: 71px;
+    height: 100vh;
+    overflow: scroll initial;
+    padding-top: 126px;
+    z-index: 1;
+    box-shadow: 4px 4px 4px #00000040;
     left: 0;
-    letter-spacing: 0;
-    line-height: normal;
+    position: absolute;
+  }
+  
+.sidebar {
+    color: #fff;
+    background-color: #333;
+}
+
+.sidebar-content {
+    padding: 20px; 
+    background-color: #333; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    word-break: break-all; 
+}
+
+
+/* .sidebar-content .activeClicked {
+    color: #61dafb;
+    background-color: #333; 
+    border-left: 4px solid #61dafb; 
+} */
+
+.sidebar-footer {
     text-align: center;
-    top: 1px;
-    width: 207px;
+    padding: 10px 5px;
+    overflow-wrap: break-word;
 }

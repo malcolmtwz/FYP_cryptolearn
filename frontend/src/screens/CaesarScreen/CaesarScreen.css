@@ -1,4 +1,4 @@
-.notes-screen {
+.caesar-screen {
     background-color: #C9DEED;
     display: flex;
     flex-direction: row;
@@ -9,7 +9,7 @@
     width: 100%;
   }
   
-.notes-screen .notes-background {
+.caesar-screen .caesar-background {
     background-color: #ffffff8a;
     display: flex;
     position: absolute;
