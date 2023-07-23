@@ -4,7 +4,7 @@ import "./CaesarScreen.css";
 
 function CaesarScreen() {
 
-    const [originalMessage, setOriginalMessage] = useState("learning is fun");
+    const [originalMessage, setOriginalMessage] = useState("Learning Is Fun!");
     const [shift, setShift] = useState(2);
     const [encryptedMessage, setEncryptedMessage] = useState("");
 
