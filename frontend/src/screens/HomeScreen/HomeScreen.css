@@ -1,3 +1,7 @@
+/* selector {
+  font-family: ;
+} */
+
 .home-screen {
   background-color: #C9DEED;
   /* background-color: #ffffff8a; */
@@ -23,7 +27,7 @@
 
 .home-screen .h-1 {
   color: #383838;
-  font-family: "Simple Handmade", Helvetica;
+  font-family: Handlee, Helvetica;
   font-size: 94.3px;
   font-weight: 400;
   letter-spacing: -4.71px;
