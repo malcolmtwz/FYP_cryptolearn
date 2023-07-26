@@ -1,6 +1,6 @@
 .game-button {
-    height: 126px;
-    width: 200px;
+    height: 11vh;
+    width: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,6 +15,8 @@
     cursor: pointer;
     flex-direction: column;
     text-decoration: none;
+    min-width: 200px;
+    min-height: 80px;
 }
 
 .game-button:hover {
@@ -27,13 +29,6 @@
     align-items: center;
     text-decoration: none;
 }
-  
-.game-button .selected {
-    height: 97px;
-    position: relative;
-    top: 20px;
-    
-}
 
 .game-button .game {
     color: #61dafb;
@@ -45,21 +40,13 @@
     text-align: center;
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 2%;
     text-decoration: none;
-    /* top: 53px; */
-    /* width: 200px; */
-    /* height: 44px; */
-    /* left: 0; */
-    /* position: absolute; */
+
 }
 
 .game-button .game-img {
-    /* height: 56px; */
-    /* left: 74px; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* width: 52px; */
+
     display: flex;
     align-items: center;
     text-decoration: none;

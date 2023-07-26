@@ -29,6 +29,15 @@ const SideBar = () => {
             <NavLink exact to="/caesar" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon='table' >Caesar Cipher</CDBSidebarMenuItem>
             </NavLink>
+            <NavLink exact to="/beaufort" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon='table' >Beaufort Cipher</CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/vig" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon='table' >Vigenere Cipher</CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/column" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon='table' >Column Transposition Cipher</CDBSidebarMenuItem>
+            </NavLink>
             <NavLink exact to="/secret" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon='user' >Secret Key Cryptography</CDBSidebarMenuItem>
             </NavLink>

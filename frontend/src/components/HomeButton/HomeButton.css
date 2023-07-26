@@ -1,6 +1,6 @@
 .home-button {
-    height: 126px;
-    width: 200px;
+    height: 11vh;
+    width: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,6 +15,8 @@
     cursor: pointer;
     flex-direction: column;
     text-decoration: none;
+    min-width: 200px;
+    min-height: 80px;
 }
 
 .home-button:hover {
@@ -25,12 +27,7 @@
     display: flex;
     align-items: center;
 }
-  
-.home-button .selected {
-    height: 97px;
-    position: relative;
-    top: 20px;
-}
+
 
 .home-button .home {
     color: #61dafb;
@@ -42,22 +39,11 @@
     text-align: center;
     display: flex;
     align-items: center;
-    margin-top: 5px;
-    /* top: 53px; */
-    /* width: 200px; */
-    /* height: 44px; */
-    /* left: 0; */
-    /* position: absolute; */
+    margin-top: 2%;
 }
 
 .home-button .home-img {
-    /* height: 56px; */
-    /* left: 74px; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* width: 52px; */
     display: flex;
     align-items: center;
-    
 }
   
