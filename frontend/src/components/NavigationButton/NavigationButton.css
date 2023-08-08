@@ -1,0 +1,26 @@
+.navigation-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    /* background-color: #61dafb; */
+    color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    /* transition: background-color 0.3s ease-in-out; */
+    position: fixed; 
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%); 
+  }
+  
+.navigation-button:hover {
+    color: #218edf;
+}
+
+.navigation-button svg {
+    width: 5vw;
+    height: 5vh;
+    margin-right: 8px;
+    /* fill: white; */
+}
