@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CaesarScreen.css";
-import CaesarTable from "../../components/CaesarTable/CaesarTable"
+
 import CaesarDecrypter from "../../components/CaesarDecrypter/CaesarDecrypter";
 import NavigationButton from "../../components/NavigationButton/NavigationButton";
 import SideBar from "../../components/SideBar/SideBar";
@@ -17,7 +17,6 @@ function CaesarScreen() {
                 {/* <hr className="border-line"/> */}
                 <h2 className = "h-2"> A Caesar Cipher is an encoding algorithm that subtitutes a letter for another.</h2>
                 <h4> Letters in the alphabets are shifted by a fixed number!</h4>
-                {/* <CaesarTable /> */}
                 <img className="caesar-img" src={caesarImg} alt="Caesar Image"/>
                 
                 <p> Alphabets in this image is shifted by '-3'</p>

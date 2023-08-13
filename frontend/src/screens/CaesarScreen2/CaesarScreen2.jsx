@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CaesarScreen2.css";
-import CaesarTable from "../../components/CaesarTable/CaesarTable"
+
 import CaesarDecrypter from "../../components/CaesarDecrypter/CaesarDecrypter";
 import NavigationButton from "../../components/NavigationButton/NavigationButton";
 import SideBar from "../../components/SideBar/SideBar";
