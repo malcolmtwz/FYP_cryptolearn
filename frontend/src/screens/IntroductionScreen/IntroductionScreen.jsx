@@ -8,7 +8,7 @@ function IntroductionScreen() {
         
         <div className="introduction-screen">
             <div className="introduction-background">    
-                <NavigationButton to="/other-page" />
+                <NavigationButton to="/temp-page" />
             </div>
         </div>
     );

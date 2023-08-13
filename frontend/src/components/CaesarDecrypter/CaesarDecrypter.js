@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./CaesarDecrypter.css"
 
 function CaesarDecrypter() {
-    const [originalMessage, setOriginalMessage] = useState("Learning Is Fun!");
-    const [shift, setShift] = useState(2);
+    const [originalMessage, setOriginalMessage] = useState("A B C D E F");
+    const [shift, setShift] = useState(1);
     const [encryptedMessage, setEncryptedMessage] = useState("");
 
     useEffect(() => {
@@ -62,7 +62,7 @@ function CaesarDecrypter() {
                 onChange={(e) => setShift(e.target.value)}
             />
 
-            <hr/>
+            {/* <hr/> */}
 
             <label htmlFor="encrypted"> Encrypted Message </label>
             <input id="encrypted" type="text" value={encryptedMessage} readOnly />

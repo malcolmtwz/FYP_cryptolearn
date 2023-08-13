@@ -6,6 +6,7 @@
     "@mui/core": "^5.0.0-alpha.54",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.3",
-    "react-sizeme": "^3.0.2"
+    "react-sizeme": "^3.0.2",
+    "styled-components": "^6.0.7"
   }
 }

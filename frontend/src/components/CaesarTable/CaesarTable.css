@@ -1,0 +1,14 @@
+.root {
+    width: 20vw;
+    background-color: #cdcdcd;
+    margin: auto;
+  }
+  
+  .input {
+    width: 5vw;
+  }
+  
+  .table {
+    margin: auto;
+    max-width: 650px;
+  }

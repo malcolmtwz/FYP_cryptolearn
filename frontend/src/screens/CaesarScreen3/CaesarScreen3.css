@@ -1,4 +1,4 @@
-.caesar-screen {
+.caesar3-screen {
   background-color: #C9DEED;
   display: flex;
   flex-direction: row;
@@ -7,15 +7,13 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 3;
   top: 11vh;
-  left: 3vw;
   }
   
-.caesar-screen .caesar-background {
+.caesar3-screen .caesar3-background {
   background-color: #ffffff8a;
   display: flex;
-  /* position: absolute; */
+  position: absolute;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 4px #00000040;
@@ -23,7 +21,6 @@
   width: 100%;
   margin-right: 5%;
   flex-direction: column;
-  /* overflow-y: scroll; */
 }
 
 .h-2{
@@ -45,7 +42,7 @@ html {
   --darkGray: #A2A2A2;
 }
 
-.caesar-screen .h-1 {
+.h-1 {
   color: #383838;
   font-family: "Simple Handmade", Helvetica;
   border-bottom: 5px solid var(--black);
@@ -61,7 +58,7 @@ h2,h3,h4{
   font-weight: 200;
 }
 
-.caesar-screen .label {
+.label {
   margin: 20px;
   color: var(--darkGray);
 }
@@ -91,5 +88,5 @@ input {
 
 .border-line {
   border: 2px solid var(--primary);
-  width: 50vw;
+  width: 30vw;
 }

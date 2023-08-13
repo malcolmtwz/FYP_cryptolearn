@@ -1,4 +1,4 @@
-.navigation-button {
+.navigation-button-back {
     display: inline-flex;
     align-items: center;
     padding: 10px 15px;
@@ -10,15 +10,15 @@
     /* transition: background-color 0.3s ease-in-out; */
     position: fixed; 
     top: 90%; 
-    right: 1vw; 
+    left : 11vw;
     transform: translateY(-50%); 
   }
   
-.navigation-button:hover {
+.navigation-button-back:hover {
     color: #218edf;
 }
 
-.navigation-button svg {
+.navigation-button-back svg {
     width: 5vw;
     height: 5vh;
     margin-right: 8px;

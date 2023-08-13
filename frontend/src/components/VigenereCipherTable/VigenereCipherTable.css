@@ -1,0 +1,27 @@
+.vigenere-cipher-table {
+    width: 50%;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  th.selected,
+  td.selected {
+    background-color: #ccc;
+  }
+
+  .vigenere-table-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
