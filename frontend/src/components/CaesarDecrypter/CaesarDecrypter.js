@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./CaesarDecrypter.css"
 
 function CaesarDecrypter() {
-    const [originalMessage, setOriginalMessage] = useState("A B C D E F");
-    const [shift, setShift] = useState(1);
+    const [originalMessage, setOriginalMessage] = useState("APPLE");
+    const [shift, setShift] = useState(3);
     const [encryptedMessage, setEncryptedMessage] = useState("");
 
     useEffect(() => {

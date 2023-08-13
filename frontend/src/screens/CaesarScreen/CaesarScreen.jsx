@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./CaesarScreen.css";
+// import "./CaesarScreen.css";
 
 import CaesarDecrypter from "../../components/CaesarDecrypter/CaesarDecrypter";
 import NavigationButton from "../../components/NavigationButton/NavigationButton";
@@ -21,6 +21,7 @@ function CaesarScreen() {
                 {/* <img className="caesar-img" src={caesarImg} alt="Caesar Image"/> */}
                 <CaesarTable/>
                 <p> Alphabets in the above table is shifted by '3'</p>
+                <p> Therefore, a plaintext 'A' would be encrypted into a ciphertext 'D'</p>
                 
                 <hr className="border-line"/>
 
