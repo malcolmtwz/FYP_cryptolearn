@@ -36,7 +36,7 @@ const SideBar = () => {
               <CDBSidebarMenuItem icon='table' >Vigenere Cipher</CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/column" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon='table' >Column Transposition Cipher</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem icon='table' >Columnar Transposition Cipher</CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/secret" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon='user' >Secret Key Cryptography</CDBSidebarMenuItem>

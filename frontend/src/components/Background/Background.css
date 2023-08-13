@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: center; 
     position: absolute;
-    height: fit-content;
+    height: max-content;
+    min-height: 100%;
     width: 100%;
     top: 11vh;
     left: 3vw;
@@ -20,7 +21,8 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 4px #00000040;
-    height: 100%;
+    height: max-content;
+    min-height: 100%;
     width: 100%;
     top: 11vh;
     left: 3vw;

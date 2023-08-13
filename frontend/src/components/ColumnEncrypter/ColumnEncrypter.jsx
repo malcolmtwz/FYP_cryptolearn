@@ -1,65 +1,70 @@
 import React, { useState } from 'react';
 
-function ColumnEncrypter() {
-  const [inputText, setInputText] = useState('');
-  const [key, setKey] = useState('');
-  const [encryptedText, setEncryptedText] = useState('');
+const ColumnEncrypter = () => {
+  const [key, setKey] = useState('KEY'); // Default key
+  const [plaintext, setPlaintext] = useState('DAY'); // Default plaintext
+  const [ciphertext, setCiphertext] = useState('');
 
-  const encrypt = () => {
-    const sanitizedKey = key.replace(/[^0-9]/g, '');
-    const keyLength = sanitizedKey.length;
-    const textWithoutSpaces = inputText.replace(/\s/g, '');
-    const numRows = Math.ceil(textWithoutSpaces.length / keyLength);
+  const handleKeyChange = (event) => {
+    const newKey = event.target.value.toUpperCase();
+    setKey(newKey);
+    encrypt(newKey, plaintext);
+  };
 
-    const matrix = [];
-    for (let i = 0; i < numRows; i++) {
-      matrix.push([]);
-    }
+  const handlePlaintextChange = (event) => {
+    const newPlaintext = event.target.value.toUpperCase();
+    setPlaintext(newPlaintext);
+    encrypt(key, newPlaintext);
+  };
 
-    let rowIndex = 0;
-    for (let i = 0; i < textWithoutSpaces.length; i++) {
-      matrix[rowIndex].push(textWithoutSpaces[i]);
-      rowIndex = (rowIndex + 1) % numRows;
-    }
+  const encrypt = (currentKey, currentPlaintext) => {
+    const sortedKey = currentKey.split('').sort().join('');
+    const numCols = currentKey.length;
+    const numRows = Math.ceil(currentPlaintext.length / numCols);
+    const matrix = new Array(numRows)
+      .fill('')
+      .map(() => new Array(numCols).fill(''));
 
-    matrix.forEach(row => {
-      while (row.length < keyLength) {
-        row.push('');
+    let plaintextIndex = 0;
+    for (let col = 0; col < numCols; col++) {
+      const keyIndex = currentKey.indexOf(sortedKey[col]);
+      for (let row = 0; row < numRows; row++) {
+        if (plaintextIndex < currentPlaintext.length) {
+          matrix[row][keyIndex] = currentPlaintext[plaintextIndex];
+          plaintextIndex++;
+        }
       }
-    });
+    }
 
-    const sortedColumns = sanitizedKey.split('').map(Number).sort();
-    let encrypted = '';
-    sortedColumns.forEach(colIndex => {
-      matrix.forEach(row => {
-        encrypted += row[colIndex];
-      });
-    });
+    let newCiphertext = '';
+    for (let col = 0; col < numCols; col++) {
+      for (let row = 0; row < numRows; row++) {
+        if (matrix[row][col] !== undefined) {
+          newCiphertext += matrix[row][col];
+        }
+      }
+    }
 
-    setEncryptedText(encrypted);
+    setCiphertext(newCiphertext);
   };
 
   return (
     <div>
-      <h2>Column Transposition Cipher Encryption</h2>
-      <textarea
-        placeholder="Enter text to encrypt"
-        value={inputText}
-        onChange={e => setInputText(e.target.value)}
-      />
-      <br />
-      <input
-        type="text"
-        placeholder="Enter encryption key"
-        value={key}
-        onChange={e => setKey(e.target.value)}
-      />
-      <br />
-      <button onClick={encrypt}>Encrypt</button>
-      <h3>Encrypted Text</h3>
-      <textarea value={encryptedText} readOnly />
+      <h2>Columnar Transposition Cipher Encrypter</h2>
+      <div>
+        <label>Key:</label>
+        <input type="text" value={key} onChange={handleKeyChange} />
+      </div>
+      <div>
+        <label>Plaintext:</label>
+        <input type="text" value={plaintext} onChange={handlePlaintextChange} />
+      </div>
+      <div>
+        <label>Ciphertext:</label>
+        <input type="text" value={ciphertext} readOnly />
+      </div>
     </div>
   );
-}
+};
 
 export default ColumnEncrypter;
