@@ -5,6 +5,7 @@ import NavigationButton from "../../components/NavigationButton/NavigationButton
 import SideBar from "../../components/SideBar/SideBar";
 import NavigationButtonBack from "../../components/NavigationButtonBack/NavigationButtonBack";
 import AnswerCheck from "../../components/AnswerCheck/AnswerCheck";
+import CaesarTable from "../../components/CaesarTable/CaesarTable";
 
 function CaesarScreen3() {
 
@@ -22,6 +23,8 @@ function CaesarScreen3() {
                 <hr className="border-line"/>
 
                 <AnswerCheck correctAnswer="YouGotIt" hint="Beware that the answer is case-sensitive!"/>
+                
+                <CaesarTable defaultRotation="0"/>
 
                 {/* <NavigationButton to="/caesar3" /> */}
 

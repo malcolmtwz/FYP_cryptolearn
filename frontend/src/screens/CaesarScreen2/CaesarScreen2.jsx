@@ -6,6 +6,7 @@ import NavigationButton from "../../components/NavigationButton/NavigationButton
 import SideBar from "../../components/SideBar/SideBar";
 import NavigationButtonBack from "../../components/NavigationButtonBack/NavigationButtonBack";
 import AnswerCheck from "../../components/AnswerCheck/AnswerCheck";
+import CaesarTable from "../../components/CaesarTable/CaesarTable";
 
 function CaesarScreen2() {
 
@@ -20,6 +21,8 @@ function CaesarScreen2() {
                 <hr className="border-line"/>
 
                 <AnswerCheck correctAnswer="SwkbVkog" hint ="Hint: The letter 'A', when shifted by 2, would be 'C'"/>
+               
+                <CaesarTable defaultRotation="0"/>
                
                 <NavigationButtonBack to="/caesar"/>
                 <NavigationButton to="/caesar3" />

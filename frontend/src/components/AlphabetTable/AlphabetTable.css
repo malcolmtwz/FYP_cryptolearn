@@ -1,11 +1,11 @@
 .alpha-table {
-    font-size: 12px; /* Adjust the font size to your preference */
-    border-collapse: collapse; /* Combine cell borders for a cleaner look */
-    width: 50%;
+    font-size: 16px; 
+    border-collapse: collapse; 
+    width: 70%;
   }
   
   .alpha-table th,
   .alpha-table td {
-    padding: 4px; /* Adjust cell padding to your preference */
-    border: 1px solid #ccc; /* Add borders to cells */
+    padding: 4px;
+    border: 1px solid #ccc;
   }
