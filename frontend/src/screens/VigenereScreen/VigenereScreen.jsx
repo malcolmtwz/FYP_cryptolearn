@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./VigenereScreen.css";
 import NavigationButton from "../../components/NavigationButton/NavigationButton";
 import Background from "../../components/Background/Background";
-import VigenereCipherTable from "../../components/VigenereCipherTable/VigenereCipherTable";
 import VigenereEncrypter from "../../components/VigenereEncrypter/VigenereEncrypter";
+import VigenereCipherAccordion from "../../components/VigenereCipherTable/VigenereCipherTable";
 
 function VigenereScreen() {
     const defaultSelectedRow = 10;
@@ -27,11 +27,9 @@ function VigenereScreen() {
             <h5> In the table below, the first letter of our 'Keyword' and 'Plaintext' is highlighted below. Try to find the rest through the table! </h5>
             
 
-            <p className="labels"> Text </p>
-            <div className="vigenere-table-container">
-                <p className="labels"> Key </p>
-                <VigenereCipherTable defaultSelectedRow={defaultSelectedRow} defaultSelectedCol={defaultSelectedCol}/>
-            </div>
+
+            <VigenereCipherAccordion defaultSelectedRow={defaultSelectedRow} defaultSelectedCol={defaultSelectedCol}/>
+
 
             <hr className="border-line"/>
             <NavigationButton to="/temp-page" />

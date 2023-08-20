@@ -1,27 +1,45 @@
 .vigenere-cipher-table {
-    width: 50%;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th,
-  td {
-    border: 1px solid #ddd;
-    text-align: center;
-    padding: 8px;
-    cursor: pointer;
-  }
-  
-  th.selected,
-  td.selected {
-    background-color: #ccc;
-  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .vigenere-table-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
+.vigenere-cipher-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vigenere-cipher-table th,
+.vigenere-cipher-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.vigenere-cipher-table th.selected,
+.vigenere-cipher-table td.selected {
+  background-color: #ccc;
+}
+
+.vigenere-cipher-table .vigenere-table-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.vigenere-cipher-table .vigenere-cipher-labels {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.vigenere-cipher-table .vigenere-cipher-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.vigenere-accordion-label {
+  font-weight: bold;
+}
