@@ -3,7 +3,7 @@ import { Slider, Input, Box, Table, TableHead, TableRow, TableCell, TableBody, A
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './CaesarTable.css';
 
-const CaesarTable = ({defaultRotation}) => {
+const CaesarTable = ({ defaultRotation }) => {
   const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const [rotation, setRotation] = useState(defaultRotation);
 
@@ -13,22 +13,28 @@ const CaesarTable = ({defaultRotation}) => {
     }
   };
 
+  const [isAccordionExpanded, setIsAccordionExpanded] = useState(true);
+
+  const handleAccordionToggle = () => {
+    setIsAccordionExpanded(!isAccordionExpanded);
+  };
+
   const rotatedAlphabets = alphabets.slice(rotation) + alphabets.slice(0, rotation);
 
   return (
     <div className="caesar-table-container">
-      <Accordion expanded="True">
+      <Accordion expanded={isAccordionExpanded} onChange={handleAccordionToggle}>
         <AccordionSummary expandIcon={<KeyboardArrowDownIcon />}>
-          <Typography variant="h6">Caesar Table</Typography>
+          <Typography className="caesar-accordion-heading" variant="h6">Caesar Table</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <div className="table-wrapper">
+          <div className="caesar-table-wrapper">
             <Table className="caesar-table" style={{ borderCollapse: 'collapse' }}>
               <TableHead>
                 <TableRow>
-                  <TableCell style={{ borderBottom: '1px solid #ddd' }}>Plaintext</TableCell>
+                  <TableCell className="caesar-table-cell-header">Plaintext</TableCell>
                   {alphabets.split('').map((letter, index) => (
-                    <TableCell key={index} align="center" style={{ fontWeight: 'bold', fontSize: '1.2rem', borderBottom: '1px solid #ddd' }}>
+                    <TableCell key={index} align="center" className="caesar-table-cell-header">
                       {letter}
                     </TableCell>
                   ))}
@@ -36,17 +42,17 @@ const CaesarTable = ({defaultRotation}) => {
               </TableHead>
               <TableBody>
                 <TableRow>
-                  <TableCell style={{ borderTop: '1px solid #ddd' }}>Ciphertext</TableCell>
+                  <TableCell className="caesar-table-cell">Ciphertext</TableCell>
                   {rotatedAlphabets.split('').map((letter, index) => (
-                    <TableCell key={index} align="center" style={{ fontSize: '1.2rem', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd' }}>
+                    <TableCell key={index} align="center" className="caesar-table-cell">
                       {letter}
                     </TableCell>
                   ))}
                 </TableRow>
               </TableBody>
             </Table>
-            <Box className="rotation-input">
-              <label>Key</label>
+            <Box className="caesar-rotation-input">
+              <label className="caesar-input-label">Key</label>
               <Box display="flex" alignItems="center">
                 <Slider
                   value={rotation}
