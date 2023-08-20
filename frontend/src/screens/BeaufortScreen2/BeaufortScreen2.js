@@ -1,1 +1,0 @@
-export { default } from './BeaufortScreen2.jsx';

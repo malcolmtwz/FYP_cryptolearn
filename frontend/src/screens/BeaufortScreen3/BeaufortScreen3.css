@@ -1,0 +1,17 @@
+html {
+  --primary: #02637e;
+  --font: 'Andale Mono', 'Menlo', 'Courier New', Courier, monospace;
+  --dark: #222;
+  --gray: #D8D8D8;
+  --white: #FFF;
+  --darkGray: #A2A2A2;
+} 
+
+.border-line{
+  border: 2px solid var(--primary);
+  width: 50vw;
+}
+
+h5{
+  padding-bottom: 3vh;
+}

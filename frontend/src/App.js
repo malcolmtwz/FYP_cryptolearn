@@ -16,6 +16,7 @@ import BeaufortScreen from './screens/BeaufortScreen/BeaufortScreen';
 import VigenereScreen from './screens/VigenereScreen/VigenereScreen';
 import ColumnScreen from './screens/ColumnScreen/ColumnScreen';
 import BeaufortScreen2 from './screens/BeaufortScreen2/BeaufortScreen2';
+import BeaufortScreen3 from './screens/BeaufortScreen3/BeaufortScreen3';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/intro" element={<> <SideBar/> <IntroductionScreen /> </>} />
           <Route path="/beaufort" element={<> <SideBar/> <BeaufortScreen /> </>} />
           <Route path="/beaufort2" element={<> <SideBar/> <BeaufortScreen2 /> </>} />
+          <Route path="/beaufort3" element={<> <SideBar/> <BeaufortScreen3 /> </>} />
           <Route path="/vig" element={<> <SideBar/> <VigenereScreen /> </>} />
           <Route path="/column" element={<> <SideBar/> <ColumnScreen /> </>} />
           <Route path="/temp-page" element={<> <SideBar/> <IntroductionScreen /> </>} />

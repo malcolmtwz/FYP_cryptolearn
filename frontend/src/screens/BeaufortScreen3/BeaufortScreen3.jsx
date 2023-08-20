@@ -1,31 +1,28 @@
 import React, { useState, useEffect } from "react";
-import "./BeaufortScreen2.css";
+import "./BeaufortScreen3.css";
 
-import NavigationButton from "../../components/NavigationButton/NavigationButton";
 import NavigationButtonBack from "../../components/NavigationButtonBack/NavigationButtonBack";
 import AnswerCheck from "../../components/AnswerCheck/AnswerCheck";
-import CaesarTable from "../../components/CaesarTable/CaesarTable";
 import Background from "../../components/Background/Background";
 import BeaufortCipherAccordion from "../../components/BeaufortCipherTable/BeaufortCipherTable";
 
-function BeaufortScreen2() {
+function BeaufortScreen3() {
 
     return(
     <Background>
         <h2 className = "h-2"> Quiz Time!</h2>
-        <h4> Can you encrypted the PlainText, 'QUIZTIME'?</h4>
+        <h4> Can you decrypt the Encrpyted Message, 'OKWWKVYP'?</h4>
         <h4> Let our 'Keyword' be 'KEY'!</h4>
         
         <hr className="border-line"/>
 
-        <AnswerCheck correctAnswer="UKQLLQYA" hint ="Hint: Since the Keyword is not the same length as the PlainText, you could just extend the Keyword such as 'KEYKEYKE' "/>
+        <AnswerCheck correctAnswer="YOU GOT IT" hint ="Try using the table below! Find out what each letter would be encrypted first!"/>
         
         <BeaufortCipherAccordion/>
 
         <hr className="border-line"/>
         
-        <NavigationButtonBack to="/beaufort"/>
-        <NavigationButton to="/beaufort3" />
+        <NavigationButtonBack to="/beaufort2"/>
 
     </Background>
     );
@@ -33,4 +30,4 @@ function BeaufortScreen2() {
     
 }
 
-export default BeaufortScreen2;
+export default BeaufortScreen3;
