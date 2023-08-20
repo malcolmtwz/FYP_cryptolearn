@@ -1,21 +1,40 @@
 .beaufort-cipher-table {
   width: 60%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
 }
 
-table {
+.beaufort-cipher-table table {
   border-collapse: collapse;
   width: 100%;
 }
 
-th,
-td {
+.beaufort-cipher-table th,
+.beaufort-cipher-table td {
   border: 1px solid #ddd;
   text-align: center;
   padding: 8px;
   cursor: pointer;
 }
 
-th.selected,
-td.selected {
+.beaufort-cipher-table th.selected,
+.beaufort-cipher-table td.selected {
   background-color: #ccc;
+}
+
+.beaufort-cipher-table .beaufort-cipher-labels {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.beaufort-cipher-table .beaufort-cipher-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.beaufort-accordion-label {
+  font-weight: bold;
 }

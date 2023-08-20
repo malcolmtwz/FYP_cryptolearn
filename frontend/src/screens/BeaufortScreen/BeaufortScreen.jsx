@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./BeaufortScreen.css";
 import NavigationButton from "../../components/NavigationButton/NavigationButton";
 import Background from "../../components/Background/Background";
-import BeaufortCipherTable from "../../components/BeaufortCipherTable/BeaufortCipherTable";
 import BeaufortEncrypter from "../../components/BeaufortEncrypter/BeaufortEncrypter";
+import BeaufortCipherAccordion from "../../components/BeaufortCipherTable/BeaufortCipherTable";
 
 function BeaufortScreen() {
     const defaultSelectedRow = 10;
@@ -25,12 +25,8 @@ function BeaufortScreen() {
 
             <h5> In the table below, the first letter of our 'Keyword' and 'Plaintext' is highlighted below. Try to find the rest through the table! </h5>
             
-            <p className="labels"> Text </p>
-
-            <div className="beaufort-table-container">
-                <p className="labels"> Key </p>
-                <BeaufortCipherTable defaultSelectedRow={defaultSelectedRow} defaultSelectedCol={defaultSelectedCol}/>
-            </div>
+            <BeaufortCipherAccordion  defaultSelectedRow={defaultSelectedRow} defaultSelectedCol={defaultSelectedCol}/>
+ 
           
 
             <hr className="border-line"/>
