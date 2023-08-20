@@ -18,7 +18,7 @@ function ColumnScreen() {
 
             <h5> Lets use an example of a keyword being 'BREAD' and our plaintext being 'HELLOWORLD'</h5>
 
-            <p> First of, a keyword like 'BREAD' would be of length 4. </p>
+            <p> First of, a keyword like 'BREAD' would be of length 5. </p>
             <p> The alphabetical order of this keyword would be ' 2 5 4 1 3 ' based on the table below.</p>
 
             <AlphabetTable/>
