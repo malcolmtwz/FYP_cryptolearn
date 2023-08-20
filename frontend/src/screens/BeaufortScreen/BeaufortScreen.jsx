@@ -26,11 +26,10 @@ function BeaufortScreen() {
             <h5> In the table below, the first letter of our 'Keyword' and 'Plaintext' is highlighted below. Try to find the rest through the table! </h5>
             
             <BeaufortCipherAccordion  defaultSelectedRow={defaultSelectedRow} defaultSelectedCol={defaultSelectedCol}/>
- 
-          
+
 
             <hr className="border-line"/>
-            <NavigationButton to="/temp-page" />
+            <NavigationButton to="/beaufort2" />
         </Background>
     );
 }

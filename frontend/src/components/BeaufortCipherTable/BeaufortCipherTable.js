@@ -70,7 +70,7 @@ const BeaufortCipherTable = ( { defaultSelectedRow,defaultSelectedCol }) => {
 };
 
 const BeaufortCipherAccordion = (props) => {
-  const [isAccordionExpanded, setIsAccordionExpanded] = useState(false);
+  const [isAccordionExpanded, setIsAccordionExpanded] = useState(true);
 
   const handleAccordionToggle = () => {
     setIsAccordionExpanded(!isAccordionExpanded);
