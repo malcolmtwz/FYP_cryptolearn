@@ -32,7 +32,7 @@ function VigenereScreen() {
 
 
             <hr className="border-line"/>
-            <NavigationButton to="/temp-page" />
+            <NavigationButton to="/vig2" />
         </Background>
     );
 }
