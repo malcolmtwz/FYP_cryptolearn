@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const ColumnEncrypter = () => {
   const [key, setKey] = useState('KEY'); // Default key
   const [plaintext, setPlaintext] = useState('DAY'); // Default plaintext
-  const [ciphertext, setCiphertext] = useState('');
+  const [ciphertext, setCiphertext] = useState('ADY');
 
   const handleKeyChange = (event) => {
     const newKey = event.target.value.toUpperCase();

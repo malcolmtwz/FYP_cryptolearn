@@ -5,6 +5,7 @@ import Background from "../../components/Background/Background";
 import ColumnEncrypter from "../../components/ColumnEncrypter/ColumnEncrypter";
 import AlphabetTable from "../../components/AlphabetTable/AlphabetTable";
 import ColumnExampleTable from "../../components/ColumnExampleTable/ColumnExampleTable";
+import ColumnExampleTable2 from "../../components/ColumnExampleTable2/ColumnExampleTable2";
 
 function ColumnScreen() {
 
@@ -16,26 +17,31 @@ function ColumnScreen() {
             
             <hr className="border-line"/>
 
-            <h5> Lets use an example of a keyword being 'BREAD' and our plaintext being 'HELLOWORLD'</h5>
+            <h5> Lets use an example of a keyword being 'BREAD' and our plaintext being 'HELLOWORLD'.</h5>
 
             <p> First of, a keyword like 'BREAD' would be of length 5. </p>
             <p> The alphabetical order of this keyword would be ' 2 5 4 1 3 ' based on the table below.</p>
 
-            <AlphabetTable/>
+            <AlphabetTable/><p/>
 
             <p> Now, list out the keyword numbers alongside the plaintext in columns as such: </p>
 
-            <ColumnExampleTable />
+            <ColumnExampleTable /><p/>
 
-            <p> Once you got the table, construct the ciphertext by choosing the letters based on the numbered columns</p>
-            <p>Therefore, we start by taking '1', '2', '3', '4', '6'</p>
-            <p>And will construct 'LLHWODLREO'</p>
+            <p> Once you got the table, construct the ciphertext by ordering the letters based on the numbered columns</p>
+
+            <ColumnExampleTable2 /><p/>
+
+            <p>Therefore, our ciphertext would be 'LLHWODLREO'</p>
 
             <hr className="border-line"/>
             
             <ColumnEncrypter />
 
             <hr className="border-line"/>
+
+            <NavigationButton to="/temp-page"/>
+
         </Background>
     );
 }
