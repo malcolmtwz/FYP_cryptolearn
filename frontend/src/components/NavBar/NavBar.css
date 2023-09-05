@@ -25,13 +25,13 @@
 
 .nav-bar .text-wrapper {
     color: #61dafb;
-    font-family: "Mandali", Helvetica;
+    font-family: Handlee, Helvetica;
     line-height: normal;
     white-space: nowrap;
-    font-weight: normal;
-    font-size: 1vw;
-    margin-right: 2vw;
-    margin-left: 0.2vw;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-right: 3vw;
+    margin-left: 0.5vw;
 }
 
 .nav-bar .cryptography {

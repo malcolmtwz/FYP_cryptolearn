@@ -18,7 +18,7 @@ function NavBar() {
     <div className="nav-bar">
       <div className="nav-items">
           <img className="cryptography" alt="Cryptography" src={cryptographyImage} />
-          <span className="text-wrapper">Cryptography game title</span>
+          <span className="text-wrapper">Cryptolearn</span>
           <HomeButton     className="button"    homeImg={homeImage} /> 
           <NotesButton    className="button"   notesImg={notesImage} />
           <GameButton     className="button"    gameImg={gameImage} />
