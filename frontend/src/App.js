@@ -19,6 +19,7 @@ import BeaufortScreen2 from './screens/BeaufortScreen2/BeaufortScreen2';
 import BeaufortScreen3 from './screens/BeaufortScreen3/BeaufortScreen3';
 import VigenereScreen2 from './screens/VigenereScreen2/VigenereScreen2';
 import VigenereScreen3 from './screens/VigenereScreen3/VigenereScreen3';
+import CaesarQuizOneScreen from './screens/CaesarQuizOneScreen/CaesarQuizOneScreen';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/vig3" element={<> <SideBar/> <VigenereScreen3 /> </>} />
           <Route path="/column" element={<> <SideBar/> <ColumnScreen /> </>} />
           <Route path="/temp-page" element={<> <SideBar/> <IntroductionScreen /> </>} />
+          <Route path="/caesar-quiz-1" element={<CaesarQuizOneScreen/>} />
         </Routes>
       </Router>
   );

@@ -7,20 +7,46 @@
     position: absolute;
     height: 100%;
     width: 100%;
-  }
+}
   
-  .game-screen .game-background {
-    background-color: #ffffff8a;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 4px #00000040;
-    height: 100%;
-    width: 95%;
-    flex-direction: column;
-  }
+.game-screen .game-background {
+  background-color: #ffffff8a;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 100%;
+  width: 95%;
+  flex-direction: column;
+}
   
+.quiz-container{
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+
+.game-screen-title{
+  font-family: Handlee, Helvetica;
+  font-weight: bold;
+  font-size:rem;
+  margin-top: 50px;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
