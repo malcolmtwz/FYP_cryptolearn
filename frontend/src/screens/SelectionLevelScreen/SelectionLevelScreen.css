@@ -1,4 +1,4 @@
-.game-screen {
+.selection-quiz-screen {
     background-color: #C9DEED;
     display: flex;
     /* flex-direction: row; */
@@ -9,7 +9,7 @@
     width: 100%;
 }
   
-.game-screen .game-background {
+.selection-quiz-screen .selection-quiz-background {
   background-color: #ffffff8a;
   /* top: 50%;
   left: 50%;
@@ -33,25 +33,11 @@
 }
 
 
-.game-screen-title{
+.selection-quiz-screen-title{
   font-family: Handlee, Helvetica;
   font-weight: bold;
   font-size:rem;
   margin-top: 50px;
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-.game-screen .h-1 {
-  color: #383838;
-  font-family: Handlee, Helvetica;
-  font-size: 94.3px;
-  font-weight: 400;
-  letter-spacing: -4.71px;
-  line-height: normal;
-  text-align: center;
-  white-space: nowrap;
-  margin: 2%;
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
 }
@@ -63,17 +49,4 @@
   to {
     opacity: 1;
   }
-}
-
-.game-container{
-  display:flex;
-  flex-direction: row;
-  margin-top: 20px;
-}
-
-.quiz-btn-scale{
-  width: 20vw; 
-  height: 20vh; 
-  margin-left: 10px;
-  font-size: 2vw; 
 }

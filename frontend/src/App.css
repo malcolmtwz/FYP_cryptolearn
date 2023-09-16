@@ -3,3 +3,38 @@
 }
 
 @import './styles/fonts.css';
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; 
+  font-size: 1.2rem; 
+}
+
+
+.title {
+  color: #383838;
+  font-family: Handlee, Helvetica;
+  font-size: 94.3px;
+  font-weight: 400;
+  letter-spacing: -4.71px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  margin: 2%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.border-line{
+  border: 2px solid var(--primary);
+  width: 50vw;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

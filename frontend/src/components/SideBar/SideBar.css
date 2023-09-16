@@ -27,3 +27,8 @@
     padding: 10px 5px;
     overflow-wrap: break-word;
 }
+
+.activeClicked {
+    background-color: #ff0000; 
+    color: #ffffff;
+}
