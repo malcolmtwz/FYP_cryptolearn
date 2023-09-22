@@ -1,7 +1,7 @@
-// Quiz.js
 import React, { useState, useEffect } from 'react';
 import Question from '../Question/Question';
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import { Button, Container, Typography } from '@mui/material';
 
 const Quiz = ({ quizData }) => {
   const [questions, setQuestions] = useState([]);
@@ -46,7 +46,7 @@ const Quiz = ({ quizData }) => {
   };
 
   return (
-    <div>
+    <Container maxWidth="md">
       {questions.length > 0 ? (
         <Question
           questionData={questions[0]}
@@ -57,12 +57,14 @@ const Quiz = ({ quizData }) => {
         />
       ) : (
         <div>
-          <h2>Quiz Completed!</h2>
-          <p>Your score: {score}/10</p>
-          <button onClick={handleRetry}>Retry</button>
+          <Typography variant="h4">Quiz Completed!</Typography>
+          <Typography variant="body1">Your score: {score}/10</Typography>
+          <Button variant="contained" color="primary" onClick={handleRetry}>
+            Retry
+          </Button>
         </div>
       )}
-    </div>
+    </Container>
   );
 };
 
