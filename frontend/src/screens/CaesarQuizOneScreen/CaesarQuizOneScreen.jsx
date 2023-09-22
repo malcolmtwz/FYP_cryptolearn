@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Background from "../../components/Background/Background";
-import quizData from "../../data/caesarQuizData.json";
+import quizData from "../../data/caesarQuizFruits.json";
 import Quiz from "../../components/Quiz/Quiz";
 
 function CaesarQuizOneScreen() {

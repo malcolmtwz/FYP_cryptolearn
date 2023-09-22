@@ -1,6 +1,7 @@
 // Quiz.js
 import React, { useState, useEffect } from 'react';
 import Question from '../Question/Question';
+import { useParams } from "react-router-dom";
 
 const Quiz = ({ quizData }) => {
   const [questions, setQuestions] = useState([]);
