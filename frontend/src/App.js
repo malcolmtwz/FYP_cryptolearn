@@ -19,8 +19,11 @@ import BeaufortScreen2 from './screens/BeaufortScreen2/BeaufortScreen2';
 import BeaufortScreen3 from './screens/BeaufortScreen3/BeaufortScreen3';
 import VigenereScreen2 from './screens/VigenereScreen2/VigenereScreen2';
 import VigenereScreen3 from './screens/VigenereScreen3/VigenereScreen3';
-import CaesarFruitLevelOneScreen from './screens/CaesarFruitLevelOneScreen/CaesarFruitLevelOneScreen';
+import CaesarFruitLevelOneScreen from './screens/FruitsScreens/CaesarFruitLevelOneScreen';
 import SelectionLevelScreen from './screens/SelectionLevelScreen/SelectionLevelScreen'; 
+import CaesarFruitLevelTwoScreen from './screens/FruitsScreens/CaesarFruitLevelTwoScreen';
+import CaesarVegLevelOneScreen from './screens/VegetablesScreens/CaesarVegLevelOneScreen';
+import CaesarVegLevelTwoScreen from './screens/VegetablesScreens/CaesarVegLevelTwoScreen';
 
 function App() {
   return (
@@ -46,7 +49,10 @@ function App() {
           <Route path="/temp-page" element={<> <SideBar/> <IntroductionScreen /> </>} />
         
           <Route path="/selection/:category" element={<SelectionLevelScreen />} />
-          <Route path="/:category/caesar/level-1" element={<CaesarFruitLevelOneScreen />} />
+          <Route path="/fruits/caesar/level-1" element={<CaesarFruitLevelOneScreen />} />
+          <Route path="/fruits/caesar/level-2" element={<CaesarFruitLevelTwoScreen />} />
+          <Route path="/vegetables/caesar/level-1" element={<CaesarVegLevelOneScreen />} />
+          <Route path="/vegetables/caesar/level-2" element={<CaesarVegLevelTwoScreen />} />
         </Routes>
       </Router>
   );

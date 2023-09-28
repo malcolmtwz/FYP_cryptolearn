@@ -73,6 +73,7 @@ const Question = ({ questionData, questionNumber, onAnswer, onHint, onSkip }) =>
         </Button>
       </CardActions>
 
+      
       <Dialog open={submitDialogOpen} onClose={handleCloseSubmitDialog}>
         <DialogTitle>Submission Result</DialogTitle>
         <DialogContent>

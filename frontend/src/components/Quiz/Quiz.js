@@ -9,8 +9,10 @@ const Quiz = ({ quizData }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   useEffect(() => {
-    const shuffledQuestions = shuffleArray(quizData);
-    setQuestions(shuffledQuestions.slice(0, 10));
+    // const shuffledQuestions = shuffleArray(quizData);
+    // setQuestions(shuffledQuestions.slice(0, 10));
+    const randomQuestions = generateRandomQuestions(quizData, 10);
+    setQuestions(randomQuestions);
   }, [quizData]);
 
   const handleAnswer = (points) => {
@@ -45,11 +47,53 @@ const Quiz = ({ quizData }) => {
     return shuffled;
   };
 
+  const generateRandomRotValue = () => {
+    // Generate a random ROT value between 1 and 25
+    return Math.floor(Math.random() * 25) + 1;
+  };
+
+  const encryptWithRandomRot = (text, rot) => {
+    // Encrypt text using the given ROT value
+    const encryptedText = [];
+
+    for (let i = 0; i < text.length; i++) {
+      const char = text[i];
+      if (char.match(/[a-z]/i)) {
+        const code = text.charCodeAt(i);
+        const encryptedChar = String.fromCharCode(
+          code + (char.toUpperCase() === char ? rot : -rot)
+        );
+        encryptedText.push(encryptedChar);
+      } else {
+        encryptedText.push(char);
+      }
+    }
+
+    return encryptedText.join('');
+  };
+
+  const generateRandomQuestions = (quizData, count) => {
+    const randomQuestions = [];
+
+    for (let i = 0; i < count; i++) {
+      const randomRotValue = generateRandomRotValue();
+      const data = quizData[Math.floor(Math.random() * quizData.length)];
+      const questionData = {
+        answer: encryptWithRandomRot(data.answer, randomRotValue),
+        hint: `Shift the letters to ROT-${randomRotValue}`,
+      };
+
+      randomQuestions.push(questionData);
+    }
+
+    return randomQuestions;
+  };
+
   return (
     <Container maxWidth="md">
       {questions.length > 0 ? (
         <Question
-          questionData={questions[0]}
+          questionData={questions[currentQuestion]}
           questionNumber={currentQuestion}
           onAnswer={handleAnswer}
           onHint={(hint) => alert(`Hint: ${hint}`)}

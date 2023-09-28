@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Background from "../../components/Background/Background";
-import caesarQuizFruits from "../../data/caesarQuizFruits.json";
-import Quiz from "../../components/Quiz/Quiz";
+import QuizComponent from "../../components/Quiz/QuizComponent";
+import fruits from "../../data/fruits.json"
 
 function CaesarFruitLevelOneScreen() {
 
     return(
         <div className="game-screen">
             <div className="game-background">
-                <Quiz quizData={caesarQuizFruits} />
+                <QuizComponent quizData={fruits} levelChoice={1}/>
             </div>
         </div>
     );
