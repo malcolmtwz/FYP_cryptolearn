@@ -8,8 +8,8 @@ const QuestionsComponent = ({
   onSkip,
 }) => {
 
-    console.log('currentQuestion:', currentQuestion);
-    console.log('questions:', questions);
+    // console.log('currentQuestion:', currentQuestion);
+    // console.log('questions:', questions);
     console.log('answer to current question',questions.answer)
 
 
@@ -27,8 +27,12 @@ const QuestionsComponent = ({
         if (userAnswer.toLowerCase() === questions.answer.toLowerCase()) {
             onAnswer(points);
             setCorrectanswer(true);
+            setSubmitDialogOpen(true);
+                setHintDialogOpen(false);
+        } else{
+            setSubmitDialogOpen(true);
         }
-        setSubmitDialogOpen(true);
+        
     };
 
     const handleHint = () => {
@@ -39,10 +43,12 @@ const QuestionsComponent = ({
     const handleCloseSubmitDialog = () => {
         if (onCorrectAnswer){
             setUserAnswer('');
-            setCorrectanswer(false);
+            setTimeout(() => { //TODO: issue with this being too fast, and a incorrect dialog will appear after submiting a correct answer
+                setCorrectanswer(false);
+            }, 100);
         }
         setSubmitDialogOpen(false);
-      };
+    };
     
     const handleCloseHintDialog = () => {
         setHintDialogOpen(false);

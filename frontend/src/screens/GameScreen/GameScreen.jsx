@@ -15,7 +15,7 @@ function GameScreen() {
             <div className="game-background">
                 <h1 className="h-1">Welcome to the Game Section!</h1>
                     <p className="subtitle">The game will be a 10 question quiz, and each question will reward you with 1 point! </p>
-                    <p className="subtitle">If you get stuck on any question, you can unlock a hint for that specific question, however, you will lost half a point for that question </p>
+                    <p className="subtitle">Beware! A hint for a  specific question will cost you half a point! </p>
                     <hr className="border-line"/>
                     <h2 className="subtitle"> Below are the 2 topics available for the quizzes, any encrypted or decrypted questions will be based on the topic!</h2>
                 

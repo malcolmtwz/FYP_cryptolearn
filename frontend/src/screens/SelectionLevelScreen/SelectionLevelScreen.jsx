@@ -10,7 +10,6 @@ function SelectionLevelScreen() {
     return(
         <div className="selection-quiz-screen">
             <div className="selection-quiz-background">
-                {/* <h1 className="h-1">Choose your Level</h1> */}
                 <h1 className="selection-quiz-screen-title">Caesar Quiz</h1>
                 <div className="quiz-container">
                     <LevelButton to={`/${category}/caesar/level-1`} text="Level 1"/> 

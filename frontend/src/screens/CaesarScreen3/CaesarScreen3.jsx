@@ -24,7 +24,7 @@ function CaesarScreen3() {
 
                 <AnswerCheck correctAnswer="YouGotIt" hint="Beware that the answer is case-sensitive!"/>
                 
-                <CaesarTable defaultRotation="0"/>
+                <CaesarTable defaultRotation="0" keepClosed={1}/>
 
                 {/* <NavigationButton to="/caesar3" /> */}
 

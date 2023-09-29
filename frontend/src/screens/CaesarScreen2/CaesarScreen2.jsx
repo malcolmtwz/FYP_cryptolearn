@@ -22,7 +22,7 @@ function CaesarScreen2() {
 
                 <AnswerCheck correctAnswer="SwkbVkog" hint ="Hint: The letter 'A', when shifted by 2, would be 'C'"/>
                
-                <CaesarTable defaultRotation="0"/>
+                <CaesarTable defaultRotation="0" keepClosed={1}/>
                
                 <NavigationButtonBack to="/caesar"/>
                 <NavigationButton to="/caesar3" />

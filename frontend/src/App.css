@@ -10,6 +10,20 @@
   font-size: 1.2rem; 
 }
 
+.display-score{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; 
+  font-size: 1.2rem; 
+  text-align: center;
+}
+
+.center-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
 .title {
   color: #383838;

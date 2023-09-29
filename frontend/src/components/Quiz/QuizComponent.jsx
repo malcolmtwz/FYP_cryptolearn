@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from 'react'
 import { Button, Container, Typography } from '@mui/material';
 import QuestionsComponent from '../Question/QuestionsComponent';
+import CaesarQuestions from '../RandomQuestionsGenerator/CaesarQuestions';
 
 // Generate count number of random questions based on quizData
 const generateRandomQuestions = (quizData, count, levelChoice) => {
@@ -79,7 +80,7 @@ const QuizComponent = ({quizData,levelChoice}) => {
 
     useEffect(() => {
         // generates 10 random questions and put into constant 'questions'
-        const randomQuestions = generateRandomQuestions(quizData,10, levelChoice);
+        const randomQuestions = CaesarQuestions({quizData, count: 10, levelChoice});
         setQuestions(randomQuestions);
         console.log(randomQuestions)
     }, [quizData]);
@@ -96,7 +97,7 @@ const QuizComponent = ({quizData,levelChoice}) => {
     const handleRetry = () => {
         setScore(0);
         setCurrentQuestion(0);
-        const randomQuestions = generateRandomQuestions(quizData,10,levelChoice);
+        const randomQuestions = CaesarQuestions({quizData, count: 10, levelChoice});
         setQuestions(randomQuestions);
     }
 
@@ -114,10 +115,10 @@ const QuizComponent = ({quizData,levelChoice}) => {
               onSkip={handleSkip}
           />
         ) : (
-          <div>
-            <Typography variant='h4'>Quiz Completed!</Typography>
-            <Typography variant='body1'>Your score: {score}/10</Typography>
-            <Button variant='contained' color='primary' onClick={handleRetry}>
+          <div className='center-items'>
+            <Typography className='h-1'>Quiz Completed!</Typography>
+            <Typography className='display-score'>Your score: {score}/10</Typography>
+            <Button variant='contained' color='primary' onClick={handleRetry} size="large">
               Retry
             </Button>
           </div>

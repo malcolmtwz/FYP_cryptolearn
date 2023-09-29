@@ -3,7 +3,7 @@ import { Slider, Input, Box, Table, TableHead, TableRow, TableCell, TableBody, A
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './CaesarTable.css';
 
-const CaesarTable = ({ defaultRotation }) => {
+const CaesarTable = ({ defaultRotation, keepClosed }) => {
   const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const [rotation, setRotation] = useState(defaultRotation);
 
@@ -13,7 +13,7 @@ const CaesarTable = ({ defaultRotation }) => {
     }
   };
 
-  const [isAccordionExpanded, setIsAccordionExpanded] = useState(true);
+  const [isAccordionExpanded, setIsAccordionExpanded] = useState(keepClosed);
 
   const handleAccordionToggle = () => {
     setIsAccordionExpanded(!isAccordionExpanded);
