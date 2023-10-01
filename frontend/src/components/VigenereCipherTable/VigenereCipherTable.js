@@ -70,7 +70,7 @@ const VigenereCipherTable = ({ defaultSelectedRow,defaultSelectedCol }) => {
 };
 
 const VigenereCipherAccordion = (props) => {
-  const [isAccordionExpanded, setIsAccordionExpanded] = useState(false);
+  const [isAccordionExpanded, setIsAccordionExpanded] = useState(props.isAccordionExpanded);
 
   const handleAccordionToggle = () => {
     setIsAccordionExpanded(!isAccordionExpanded);

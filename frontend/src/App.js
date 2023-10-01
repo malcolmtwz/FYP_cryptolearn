@@ -24,6 +24,15 @@ import SelectionLevelScreen from './screens/SelectionLevelScreen/SelectionLevelS
 import CaesarFruitLevelTwoScreen from './screens/FruitsScreens/CaesarFruitLevelTwoScreen';
 import CaesarVegLevelOneScreen from './screens/VegetablesScreens/CaesarVegLevelOneScreen';
 import CaesarVegLevelTwoScreen from './screens/VegetablesScreens/CaesarVegLevelTwoScreen';
+import BeaufortFruitLevelOneScreen from './screens/FruitsScreens/BeaufortFruitLevelOneScreen';
+import BeaufortFruitLevelTwoScreen from './screens/FruitsScreens/BeaufortFruitLevelTwoScreen';
+import BeaufortVegLevelOneScreen from './screens/VegetablesScreens/BeaufortVegLevelOneScreen';
+import BeaufortVegLevelTwoScreen from './screens/VegetablesScreens/BeaufortVegLevelTwoScreen';
+import VigenereFruitLevelOneScreen from './screens/FruitsScreens/ColumnarFruitLevelOneScreen';
+import VigenereFruitLevelTwoScreen from './screens/FruitsScreens/VigenereFruitLevelTwoScreen';
+import VigenereVegLevelTwoScreen from './screens/VegetablesScreens/VigenereVegLevelTwoScreen';
+import VigenereVegLevelOneScreen from './screens/VegetablesScreens/VigenereVegLevelOneScreen';
+import ColumnarFruitLevelOneScreen from './screens/FruitsScreens/ColumnarFruitLevelOneScreen';
 
 function App() {
   return (
@@ -51,8 +60,19 @@ function App() {
           <Route path="/selection/:category" element={<SelectionLevelScreen />} />
           <Route path="/fruits/caesar/level-1" element={<CaesarFruitLevelOneScreen />} />
           <Route path="/fruits/caesar/level-2" element={<CaesarFruitLevelTwoScreen />} />
+          <Route path="/fruits/beaufort/level-1" element={<BeaufortFruitLevelOneScreen />} />
+          <Route path="/fruits/beaufort/level-2" element={<BeaufortFruitLevelTwoScreen />} />
+          <Route path="/fruits/vigenere/level-1" element={<VigenereFruitLevelOneScreen />} />
+          <Route path="/fruits/vigenere/level-2" element={<VigenereFruitLevelTwoScreen />} />
+          <Route path="/fruits/columnar/level-1" element={<ColumnarFruitLevelOneScreen />} />
           <Route path="/vegetables/caesar/level-1" element={<CaesarVegLevelOneScreen />} />
           <Route path="/vegetables/caesar/level-2" element={<CaesarVegLevelTwoScreen />} />
+          <Route path="/vegetables/beaufort/level-1" element={<BeaufortVegLevelOneScreen />} />
+          <Route path="/vegetables/beaufort/level-2" element={<BeaufortVegLevelTwoScreen />} />
+          <Route path="/vegetables/vigenere/level-1" element={<VigenereVegLevelOneScreen />} />
+          <Route path="/vegetables/vigenere/level-2" element={<VigenereVegLevelTwoScreen />} />
+
+          
         </Routes>
       </Router>
   );

@@ -73,14 +73,14 @@ const encryptWithRandomRot = (text,rot) => {
 };
     
 
-const QuizComponent = ({quizData,levelChoice}) => {
+const QuizComponent = ({quizData,levelChoice,cipherType}) => {
     const [questions, setQuestions] = useState([]);
     const [score, setScore] = useState(0);
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
     useEffect(() => {
         // generates 10 random questions and put into constant 'questions'
-        const randomQuestions = CaesarQuestions({quizData, count: 10, levelChoice});
+        const randomQuestions = cipherType({quizData, count: 10, levelChoice});
         setQuestions(randomQuestions);
         console.log(randomQuestions)
     }, [quizData]);
@@ -97,7 +97,7 @@ const QuizComponent = ({quizData,levelChoice}) => {
     const handleRetry = () => {
         setScore(0);
         setCurrentQuestion(0);
-        const randomQuestions = CaesarQuestions({quizData, count: 10, levelChoice});
+        const randomQuestions = cipherType({quizData, count: 10, levelChoice});
         setQuestions(randomQuestions);
     }
 
@@ -107,23 +107,23 @@ const QuizComponent = ({quizData,levelChoice}) => {
 
     return(
         <Container maxWidth='md'>
-        {currentQuestion < questions.length ? (
-          <QuestionsComponent
-              currentQuestion={currentQuestion}
-              questions={questions[currentQuestion]}
-              onAnswer={handleAnswer}
-              onSkip={handleSkip}
-          />
-        ) : (
-          <div className='center-items'>
-            <Typography className='h-1'>Quiz Completed!</Typography>
-            <Typography className='display-score'>Your score: {score}/10</Typography>
-            <Button variant='contained' color='primary' onClick={handleRetry} size="large">
-              Retry
-            </Button>
-          </div>
-        )}
-      </Container>
+            {currentQuestion < questions.length ? (
+                <QuestionsComponent
+                    currentQuestion={currentQuestion}
+                    questions={questions[currentQuestion]}
+                    onAnswer={handleAnswer}
+                    onSkip={handleSkip}
+                />
+            ) : (
+                <div className='center-items'>
+                    <Typography className='h-1'>Quiz Completed!</Typography>
+                    <Typography className='display-score'>Your score: {score}/10</Typography>
+                    <Button variant='contained' color='primary' onClick={handleRetry} size="large">
+                    Retry
+                    </Button>
+                </div>
+            )}
+        </Container>
     );
 }
 
