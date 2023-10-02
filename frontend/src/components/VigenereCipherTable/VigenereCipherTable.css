@@ -43,3 +43,7 @@
 .vigenere-accordion-label {
   font-weight: bold;
 }
+
+.vigenere-accordian-container {
+  margin-top: 1%;
+}

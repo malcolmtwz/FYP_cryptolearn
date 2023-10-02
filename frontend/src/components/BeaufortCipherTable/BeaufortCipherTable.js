@@ -77,15 +77,18 @@ const BeaufortCipherAccordion = (props) => {
   };
 
   return (
-    <Accordion expanded={isAccordionExpanded} onChange={handleAccordionToggle}>
-      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <p className="beaufort-accordion-label">Beaufort Cipher Table</p>
-      </AccordionSummary>
-      <AccordionDetails style={{ display: 'flex', justifyContent: 'center' }}>
-        <BeaufortCipherTable {...props} />
-      </AccordionDetails>
-    </Accordion>
+    <div className='beaufort-accordian-container'>
+      <Accordion expanded={isAccordionExpanded} onChange={handleAccordionToggle}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <p className="beaufort-accordion-label">Beaufort Cipher Table</p>
+        </AccordionSummary>
+        <AccordionDetails style={{ display: 'flex', justifyContent: 'center' }}>
+          <BeaufortCipherTable {...props} />
+        </AccordionDetails>
+      </Accordion>
+    </div>
   );
+  
 };
 
 export default BeaufortCipherAccordion;

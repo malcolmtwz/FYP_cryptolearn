@@ -77,15 +77,18 @@ const VigenereCipherAccordion = (props) => {
   };
 
   return (
-    <Accordion expanded={isAccordionExpanded} onChange={handleAccordionToggle}>
-      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <p className="vigenere-accordion-label">Vigenere Cipher Table</p>
-      </AccordionSummary>
-      <AccordionDetails>
-        <VigenereCipherTable {...props} />
-      </AccordionDetails>
-    </Accordion>
-  );
+    <div className='vigenere-accordian-container'>
+      <Accordion expanded={isAccordionExpanded} onChange={handleAccordionToggle}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <p className="vigenere-accordion-label">Vigenere Cipher Table</p>
+        </AccordionSummary>
+        <AccordionDetails>
+          <VigenereCipherTable {...props} />
+        </AccordionDetails>
+      </Accordion>
+    </div>
+    );
+  
 };
 
 export default VigenereCipherAccordion;
