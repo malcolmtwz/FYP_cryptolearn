@@ -8,6 +8,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400; 
   font-size: 1.2rem; 
+  margin-top: 3%;
 }
 
 .display-score{
@@ -24,6 +25,15 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+
+.center-items-horizontally{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
 
 .title {
   color: #383838;
@@ -42,6 +52,21 @@
 .border-line{
   border: 2px solid var(--primary);
   width: 50vw;
+}
+
+.alpha-table {
+  font-size: 16px; 
+  border-collapse: collapse; 
+  width: 50%;
+  table-layout: fixed;
+}
+
+.alpha-table th,
+.alpha-table td {
+  padding: 4px;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 2%;
 }
 
 @keyframes fadeIn {

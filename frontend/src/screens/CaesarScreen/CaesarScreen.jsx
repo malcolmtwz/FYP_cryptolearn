@@ -16,7 +16,8 @@ function CaesarScreen() {
         {/* <div className="caesar-screen">
             <div className="caesar-background"> */}
                 {/* <hr className="border-line"/> */}
-                <h2 className = "h-2"> A Caesar Cipher is an encoding algorithm that subtitutes a letter for another.</h2>
+                <h2 className = "title"> Caesar Cipher</h2>
+                <h4> An encoding algorithm that subtitutes a letter for another.</h4>
                 <h4> Letters in the alphabets are shifted by a fixed number!</h4>
                 {/* <img className="caesar-img" src={caesarImg} alt="Caesar Image"/> */}
                 <CaesarTable defaultRotation="3" keepClosed={1}/>

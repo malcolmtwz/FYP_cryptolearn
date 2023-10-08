@@ -1,3 +1,7 @@
+p,h5 {
+  margin-top: 1%;
+}
+
 .vigenere-screen {
     background-color: #C9DEED;
     display: flex;

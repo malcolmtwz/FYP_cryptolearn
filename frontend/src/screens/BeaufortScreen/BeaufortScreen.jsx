@@ -12,8 +12,12 @@ function BeaufortScreen() {
     return(
         
         <Background>
-            <h2 className = "h-2"> Beaufort Cipher</h2>
+            <h2 className = "title"> Beaufort Cipher</h2>
             <h4> A Polyalphabetic cipher that uses a 'Keyword' and a 'Lookup Table' to encrypt messages!</h4>
+
+
+            {/* <hr className="border-line"/> */}
+            {/* <p> </p> */}
             
             <hr className="border-line"/>
 

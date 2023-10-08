@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AlphabetTable = () => {
+const VigenereAlphabetTable = () => {
   const letters = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i));
-  const numbers = Array.from({ length: 26 }, (_, i) => i + 1);
+  const numbers = Array.from({ length: 26 }, (_, i) => i);
 
   return (
     <table className='alpha-table'>
@@ -24,4 +24,4 @@ const AlphabetTable = () => {
   );
 };
 
-export default AlphabetTable;
+export default VigenereAlphabetTable;

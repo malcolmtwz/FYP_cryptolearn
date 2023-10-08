@@ -12,7 +12,7 @@ function ColumnScreen() {
     return(
         
         <Background>
-            <h2 className = "h-2"> Columnar Transposition Cipher</h2>
+            <h2 className = "title"> Columnar Transposition Cipher</h2>
             <h4> An encryption method that scrambles plaintext using a 'Key' and columns! </h4>
             
             <hr className="border-line"/>

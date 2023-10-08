@@ -33,6 +33,7 @@ import VigenereFruitLevelTwoScreen from './screens/FruitsScreens/VigenereFruitLe
 import VigenereVegLevelTwoScreen from './screens/VegetablesScreens/VigenereVegLevelTwoScreen';
 import VigenereVegLevelOneScreen from './screens/VegetablesScreens/VigenereVegLevelOneScreen';
 import ColumnarFruitLevelOneScreen from './screens/FruitsScreens/ColumnarFruitLevelOneScreen';
+import PublicKeyScreen from './screens/PublicKeyScreen/PublicKeyScreen';
 
 function App() {
   return (
@@ -56,6 +57,8 @@ function App() {
           <Route path="/vig3" element={<> <SideBar/> <VigenereScreen3 /> </>} />
           <Route path="/column" element={<> <SideBar/> <ColumnScreen /> </>} />
           <Route path="/temp-page" element={<> <SideBar/> <IntroductionScreen /> </>} />
+          <Route path="/public" element={<> <SideBar/> <PublicKeyScreen/> </>} />
+          <Route path="/hash" element={<> <SideBar/> </>} />
         
           <Route path="/selection/:category" element={<SelectionLevelScreen />} />
           <Route path="/fruits/caesar/level-1" element={<CaesarFruitLevelOneScreen />} />
