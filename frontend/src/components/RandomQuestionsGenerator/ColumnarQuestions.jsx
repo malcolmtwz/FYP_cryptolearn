@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from 'react'
 
 const ColumnarQuestions = ({quizData, count, levelChoice}) => {
+    console.log("ColumnarQuestions component invoked!");
 
     // Generate count number of random questions based on quizData
     const generateRandomQuestions = () => {
@@ -67,44 +68,40 @@ const ColumnarQuestions = ({quizData, count, levelChoice}) => {
             randomKeys.push(randomKey);
         }
 
-        console.log(randomKeys)
+        // console.log(randomKeys)
         return randomKeys
     };
 
 
     // Encrypt text answers with cipher to create questions
     const encryptWithRandomKey = (text, keyword) => {
-        // Create a mapping of keyword characters to their original positions
-        const keywordMap = [...keyword].reduce((map, char, index) => {
-            if (!(char in map)) {
-            map[char] = index;
-            }
-            return map;
-        }, {});
 
-        // Determine the number of columns based on the keyword length
+        // console.log(`Encrypting text: ${text} with keyword: ${keyword}`);
+
+        keyword = keyword.toUpperCase();
+        const sortedKeyword = [...keyword].map((char, index) => ({ char, index }))
+                                         .sort((a, b) => a.char.localeCompare(b.char));
         const numColumns = keyword.length;
-
-        // Pad Text if needed
-        const paddedText = text.padEnd(Math.ceil(text.length / numColumns) * numColumns, ' ');
-
-        // Create the grid and fill it with the padded Text
-        const grid = [...Array(numColumns)].map(() => []);
-        for (let i = 0; i < paddedText.length; i++) {
-            const char = paddedText[i];
-            const col = i % numColumns;
-            grid[col].push(char);
+        const numRows = Math.ceil(text.length / numColumns);
+        const requiredLength = numRows * numColumns;
+        const paddedText = text.padEnd(requiredLength);
+    
+        const grid = [];
+        for (let i = 0; i < numRows; i++) {
+            for (let j = 0; j < numColumns; j++) {
+                if (!grid[j]) grid[j] = [];
+                grid[j].push(paddedText[i * numColumns + j]);
+            }
         }
-
-        const sortedColumns = [...keyword].sort((a, b) => keywordMap[a] - keywordMap[b]);
-
-        // Read the encryptedText column by column
-        const encryptedText = sortedColumns.map((char) => grid[keywordMap[char]].join('')).join('').trim();
+    
+        const encryptedText = sortedKeyword.map(pos => grid[pos.index].join('')).join('').trim();
+        // console.log(`Encrypted text: ${encryptedText}`);
 
         return encryptedText;
     };
-
+    
     const questions = generateRandomQuestions();
+    // console.log(`Generated questions:`, questions);
 
     return questions;
 

@@ -1,0 +1,23 @@
+
+.quiz-screen {
+  background-color: #C9DEED;
+  /* background-color: #ffffff8a; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.quiz-screen .quiz-background {
+  background-color: #ffffff8a;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 100%;
+  width: 95%;
+  flex-direction: column;
+}

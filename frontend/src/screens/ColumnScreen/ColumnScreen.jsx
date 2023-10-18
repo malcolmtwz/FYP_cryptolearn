@@ -40,7 +40,7 @@ function ColumnScreen() {
 
             <hr className="border-line"/>
 
-            <NavigationButton to="/temp-page"/>
+            <NavigationButton to="/column-quiz"/>
 
         </Background>
     );

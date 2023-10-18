@@ -69,6 +69,12 @@
   width: 2%;
 }
 
+.vertical-line {
+  height: 15vw;  
+  border-left: 1px solid black;
+ 
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

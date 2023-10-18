@@ -67,7 +67,7 @@ const VigenereQuestions = ({quizData, count, levelChoice}) => {
             randomKeys.push(randomKey);
         }
 
-        console.log(randomKeys)
+        // console.log(randomKeys)
         return randomKeys
     };
 

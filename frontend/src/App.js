@@ -28,12 +28,20 @@ import BeaufortFruitLevelOneScreen from './screens/FruitsScreens/BeaufortFruitLe
 import BeaufortFruitLevelTwoScreen from './screens/FruitsScreens/BeaufortFruitLevelTwoScreen';
 import BeaufortVegLevelOneScreen from './screens/VegetablesScreens/BeaufortVegLevelOneScreen';
 import BeaufortVegLevelTwoScreen from './screens/VegetablesScreens/BeaufortVegLevelTwoScreen';
-import VigenereFruitLevelOneScreen from './screens/FruitsScreens/ColumnarFruitLevelOneScreen';
+import VigenereFruitLevelOneScreen from './screens/FruitsScreens/VigenereFruitLevelOneScreen';
 import VigenereFruitLevelTwoScreen from './screens/FruitsScreens/VigenereFruitLevelTwoScreen';
 import VigenereVegLevelTwoScreen from './screens/VegetablesScreens/VigenereVegLevelTwoScreen';
 import VigenereVegLevelOneScreen from './screens/VegetablesScreens/VigenereVegLevelOneScreen';
 import ColumnarFruitLevelOneScreen from './screens/FruitsScreens/ColumnarFruitLevelOneScreen';
+import ColumnarFruitLevelTwoScreen from './screens/FruitsScreens/ColumnarFruitLevelTwoScreen';
 import PublicKeyScreen from './screens/PublicKeyScreen/PublicKeyScreen';
+import DiffieHellmanScreen from './screens/PublicKeyScreen/DiffieHellmanScreen';
+import DiffieHellmanSimulation from './screens/PublicKeyScreen/DiffieHellmanSimulation';
+import FinalQuizFruitsL1 from './screens/FinalQuizScreen/FinalQuizFruitsL1';
+import FinalQuizFruitsL2 from './screens/FinalQuizScreen/FinalQuizFruitsL2';
+import FinalQuizVegL1 from './screens/FinalQuizScreen/FinalQuizVegL1';
+import FinalQuizVegL2 from './screens/FinalQuizScreen/FinalQuizVegL2';
+import ColumnScreenQuiz from './screens/ColumnScreen/ColumnScreenQuiz';
 
 function App() {
   return (
@@ -56,8 +64,10 @@ function App() {
           <Route path="/vig2" element={<> <SideBar/> <VigenereScreen2 /> </>} />
           <Route path="/vig3" element={<> <SideBar/> <VigenereScreen3 /> </>} />
           <Route path="/column" element={<> <SideBar/> <ColumnScreen /> </>} />
+          <Route path="/column-quiz" element={<> <SideBar/> <ColumnScreenQuiz /> </>} />
           <Route path="/temp-page" element={<> <SideBar/> <IntroductionScreen /> </>} />
           <Route path="/public" element={<> <SideBar/> <PublicKeyScreen/> </>} />
+          <Route path="/diffie-hellman-simulation" element={<> <SideBar/> <DiffieHellmanSimulation/> </>} />
           <Route path="/hash" element={<> <SideBar/> </>} />
         
           <Route path="/selection/:category" element={<SelectionLevelScreen />} />
@@ -68,12 +78,18 @@ function App() {
           <Route path="/fruits/vigenere/level-1" element={<VigenereFruitLevelOneScreen />} />
           <Route path="/fruits/vigenere/level-2" element={<VigenereFruitLevelTwoScreen />} />
           <Route path="/fruits/columnar/level-1" element={<ColumnarFruitLevelOneScreen />} />
+          <Route path="/fruits/columnar/level-2" element={<ColumnarFruitLevelTwoScreen />} />
           <Route path="/vegetables/caesar/level-1" element={<CaesarVegLevelOneScreen />} />
           <Route path="/vegetables/caesar/level-2" element={<CaesarVegLevelTwoScreen />} />
           <Route path="/vegetables/beaufort/level-1" element={<BeaufortVegLevelOneScreen />} />
           <Route path="/vegetables/beaufort/level-2" element={<BeaufortVegLevelTwoScreen />} />
           <Route path="/vegetables/vigenere/level-1" element={<VigenereVegLevelOneScreen />} />
           <Route path="/vegetables/vigenere/level-2" element={<VigenereVegLevelTwoScreen />} />
+
+          <Route path="/fruits/final/level-1" element={<FinalQuizFruitsL1 />} />
+          <Route path="/fruits/final/level-2" element={<FinalQuizFruitsL2 />} />
+          <Route path="/vegetables/final/level-1" element={<FinalQuizVegL1 />} />
+          <Route path="/vegetables/final/level-2" element={<FinalQuizVegL2 />} />
 
           
         </Routes>

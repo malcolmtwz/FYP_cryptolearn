@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext  } from 'react';
+import React, { useState } from 'react';
 import { Button, CardActions, CardContent, Container, Typography, Card, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@mui/material';
-import CipherContext from '../../screens/FinalQuizScreen/CipherContext';
 
 const QuestionsComponent = ({
   currentQuestion,
@@ -12,6 +11,7 @@ const QuestionsComponent = ({
     console.log('currentQuestion:', currentQuestion);
     // console.log('questions:', questions);
     console.log('answer to current question',questions.answer)
+
 
     const [userAnswer, setUserAnswer] = useState('');
     const [submitDialogOpen, setSubmitDialogOpen] = useState(false);

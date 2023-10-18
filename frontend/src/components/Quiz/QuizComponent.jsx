@@ -1,7 +1,6 @@
 import React, { useState, useEffect }  from 'react'
 import { Button, Container, Typography } from '@mui/material';
 import QuestionsComponent from '../Question/QuestionsComponent';
-import CaesarQuestions from '../RandomQuestionsGenerator/CaesarQuestions';
 
 // Generate count number of random questions based on quizData
 const generateRandomQuestions = (quizData, count, levelChoice) => {
@@ -82,7 +81,7 @@ const QuizComponent = ({quizData,levelChoice,cipherType}) => {
         // generates 10 random questions and put into constant 'questions'
         const randomQuestions = cipherType({quizData, count: 10, levelChoice});
         setQuestions(randomQuestions);
-        console.log(randomQuestions)
+        // console.log(randomQuestions)
     }, [quizData]);
 
     const handleAnswer = (points) => {
