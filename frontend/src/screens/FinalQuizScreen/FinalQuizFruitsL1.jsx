@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import QuizComponent from "../../components/Quiz/QuizComponent";
+import QuizWithTableComponent from "../../components/Quiz/QuizWithTableComponent";
 import fruits from "../../data/fruits.json";
 import QuizBackground from '../../components/Background/QuizBackground';
 import FinalQuiz from "./FinalQuiz";

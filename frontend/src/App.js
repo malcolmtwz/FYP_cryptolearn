@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 
 import NavBar from './components/NavBar/NavBar';
 import SideBar from './components/SideBar/SideBar';
-import HomeScreen from './screens/HomeScreen/HomeScreen';
+import HomeScreen from './screens/HubScreens/HomeScreen/HomeScreen';
 import NotesScreen from './screens/HubScreens/NotesScreen/NotesScreen';
 import GameScreen from './screens/HubScreens/GameScreen/GameScreen';
 import AboutScreen from './screens/HubScreens/AboutScreen/AboutScreen';
@@ -34,7 +34,7 @@ import VigenereVegLevelTwoScreen from './screens/VegetablesScreens/VigenereVegLe
 import VigenereVegLevelOneScreen from './screens/VegetablesScreens/VigenereVegLevelOneScreen';
 import ColumnarFruitLevelOneScreen from './screens/FruitsScreens/ColumnarFruitLevelOneScreen';
 import ColumnarFruitLevelTwoScreen from './screens/FruitsScreens/ColumnarFruitLevelTwoScreen';
-import PublicKeyScreen from './screens/PublicKeyScreen/PublicKeyScreen';
+import PublicKeyScreen from './screens/TutorialScreens/PublicKeyScreen/PublicKeyScreen';
 import FinalQuizFruitsL1 from './screens/FinalQuizScreen/FinalQuizFruitsL1';
 import FinalQuizFruitsL2 from './screens/FinalQuizScreen/FinalQuizFruitsL2';
 import FinalQuizVegL1 from './screens/FinalQuizScreen/FinalQuizVegL1';

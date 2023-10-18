@@ -4,7 +4,7 @@ import { Box, Typography, Divider, Button, TextField, Paper } from '@mui/materia
 import PersonIcon from '@mui/icons-material/Person';
 import KeyIcon from '@mui/icons-material/Key';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
-import Background from "../../components/Background/Background";
+import Background from "../../../components/Background/Background";
 import { Context, Node } from 'react-mathjax2';
 import { InlineMath, BlockMath } from 'react-katex';
 import Tex2SVG from "react-hook-mathjax";
@@ -109,10 +109,6 @@ function PublicKeyScreen() {
 
             <Divider sx={{ my: 3 }} />
 
-            <Typography variant="h5" gutterBottom>Learn More!</Typography>
-            <Button variant="contained" color="primary" href="/more-resources">
-                Explore Additional Resources
-            </Button>
         </Box>
         </Background>
     );

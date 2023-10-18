@@ -7,6 +7,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
+import './ColumnarTable.css'
 
 function ColumnarTable() {
     const [rows, setRows] = useState(4);
@@ -44,6 +45,7 @@ function ColumnarTable() {
     };
 
     return (
+        <div className='columnar-accordian-container'>
         <Accordion defaultExpanded={false}>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -103,6 +105,7 @@ function ColumnarTable() {
                 </div>
             </AccordionDetails>
         </Accordion>
+        </div>
     );
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeScreen.css";
-import { HomeScreenNotesButton} from "../../components/Buttons/HomeScreenNotesButton/HomeScreenNotesButton";
-import { HomeScreenGameButton} from "../../components/Buttons/HomeScreenGameButton/HomeScreenGameButton";
+import { HomeScreenNotesButton} from "../../../components/Buttons/HomeScreenNotesButton/HomeScreenNotesButton";
+import { HomeScreenGameButton} from "../../../components/Buttons/HomeScreenGameButton/HomeScreenGameButton";
 
 function HomeScreen() {
   return (
