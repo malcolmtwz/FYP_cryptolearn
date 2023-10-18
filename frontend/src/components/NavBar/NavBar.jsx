@@ -6,10 +6,10 @@ import notesImage from "../../img/notesImage.svg"
 import gameImage from "../../img/gameImage.svg"
 import aboutImage from "../../img/aboutusImage.svg" 
 
-import HomeButton from '../HomeButton/HomeButton';
-import NotesButton from '../NotesButton/NotesButton';
-import GameButton from '../GameButton/GameButton';
-import AboutUsButton from '../AboutUsButton/AboutUsButton';
+import HomeButton from '../Buttons/HomeButton/HomeButton';
+import NotesButton from '../Buttons/NotesButton/NotesButton';
+import GameButton from '../Buttons/GameButton/GameButton';
+import AboutUsButton from '../Buttons/AboutUsButton/AboutUsButton';
 
 
 function NavBar() {

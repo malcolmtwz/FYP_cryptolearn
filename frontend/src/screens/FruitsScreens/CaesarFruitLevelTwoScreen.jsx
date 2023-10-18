@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import QuizComponent from "../../components/Quiz/QuizComponent";
 import fruits from "../../data/fruits.json"
-import CaesarTable from "../../components/CaesarTable/CaesarTable"
+import CaesarTable from "../../components/Tables/CaesarTable/CaesarTable"
 import CaesarQuestions from "../../components/RandomQuestionsGenerator/CaesarQuestions";
 
 function CaesarFruitLevelTwoScreen() {

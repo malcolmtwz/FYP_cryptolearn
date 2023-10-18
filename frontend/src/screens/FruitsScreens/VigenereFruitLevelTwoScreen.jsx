@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuizComponent from "../../components/Quiz/QuizComponent";
 import fruits from "../../data/fruits.json"
 import VigenereQuestions from "../../components/RandomQuestionsGenerator/VigenereQuestions";
-import VigenereCipherAccordion from "../../components/VigenereCipherTable/VigenereCipherTable";
+import VigenereCipherAccordion from "../../components/Tables/VigenereTable/VigenereCipherTable";
 
 function VigenereFruitLevelTwoScreen() {
 

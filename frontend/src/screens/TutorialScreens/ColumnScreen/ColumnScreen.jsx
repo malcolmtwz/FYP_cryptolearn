@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ColumnScreen.css";
-import NavigationButton from "../../../components/NavigationButton/NavigationButton";
+import NavigationButton from "../../../components/Buttons/NavigationButton/NavigationButton";
 import Background from "../../../components/Background/Background";
 import ColumnEncrypter from "../../../components/Encrypters/ColumnEncrypter/ColumnEncrypter";
 import AlphabetTable from "../../../components/Tables/AlphabetTable/AlphabetTable";

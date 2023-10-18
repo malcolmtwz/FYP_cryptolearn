@@ -5,20 +5,20 @@ import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SideBar from './components/SideBar/SideBar';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
-import NotesScreen from './screens/NotesScreen/NotesScreen';
-import GameScreen from './screens/GameScreen/GameScreen';
-import AboutScreen from './screens/AboutScreen/AboutScreen';
-import CaesarScreen from './screens/CaesarScreen/CaesarScreen';
-import CaesarScreen2 from './screens/CaesarScreen2/CaesarScreen2';
-import CaesarScreen3 from './screens/CaesarScreen3/CaesarScreen3';
-import IntroductionScreen from './screens/IntroductionScreen/IntroductionScreen';
-import BeaufortScreen from './screens/BeaufortScreen/BeaufortScreen';
-import VigenereScreen from './screens/VigenereScreen/VigenereScreen';
-import ColumnScreen from './screens/ColumnScreen/ColumnScreen';
-import BeaufortScreen2 from './screens/BeaufortScreen2/BeaufortScreen2';
-import BeaufortScreen3 from './screens/BeaufortScreen3/BeaufortScreen3';
-import VigenereScreen2 from './screens/VigenereScreen2/VigenereScreen2';
-import VigenereScreen3 from './screens/VigenereScreen3/VigenereScreen3';
+import NotesScreen from './screens/HubScreens/NotesScreen/NotesScreen';
+import GameScreen from './screens/HubScreens/GameScreen/GameScreen';
+import AboutScreen from './screens/HubScreens/AboutScreen/AboutScreen';
+import CaesarScreen from './screens/TutorialScreens/CaesarScreen/CaesarScreen';
+import CaesarScreen2 from './screens/TutorialScreens/CaesarScreen/CaesarScreen2';
+import CaesarScreen3 from './screens/TutorialScreens/CaesarScreen/CaesarScreen3';
+import IntroductionScreen from './screens/HubScreens/IntroductionScreen/IntroductionScreen';
+import BeaufortScreen from './screens/TutorialScreens/BeaufortScreen/BeaufortScreen';
+import VigenereScreen from './screens/TutorialScreens/VigenereScreen/VigenereScreen';
+import ColumnScreen from './screens/TutorialScreens/ColumnScreen/ColumnScreen';
+import BeaufortScreen2 from './screens/TutorialScreens/BeaufortScreen/BeaufortScreen2';
+import BeaufortScreen3 from './screens/TutorialScreens/BeaufortScreen/BeaufortScreen3';
+import VigenereScreen2 from './screens/TutorialScreens/VigenereScreen/VigenereScreen2';
+import VigenereScreen3 from './screens/TutorialScreens/VigenereScreen/VigenereScreen3';
 import CaesarFruitLevelOneScreen from './screens/FruitsScreens/CaesarFruitLevelOneScreen';
 import SelectionLevelScreen from './screens/SelectionLevelScreen/SelectionLevelScreen'; 
 import CaesarFruitLevelTwoScreen from './screens/FruitsScreens/CaesarFruitLevelTwoScreen';
@@ -35,13 +35,11 @@ import VigenereVegLevelOneScreen from './screens/VegetablesScreens/VigenereVegLe
 import ColumnarFruitLevelOneScreen from './screens/FruitsScreens/ColumnarFruitLevelOneScreen';
 import ColumnarFruitLevelTwoScreen from './screens/FruitsScreens/ColumnarFruitLevelTwoScreen';
 import PublicKeyScreen from './screens/PublicKeyScreen/PublicKeyScreen';
-import DiffieHellmanScreen from './screens/PublicKeyScreen/DiffieHellmanScreen';
-import DiffieHellmanSimulation from './screens/PublicKeyScreen/DiffieHellmanSimulation';
 import FinalQuizFruitsL1 from './screens/FinalQuizScreen/FinalQuizFruitsL1';
 import FinalQuizFruitsL2 from './screens/FinalQuizScreen/FinalQuizFruitsL2';
 import FinalQuizVegL1 from './screens/FinalQuizScreen/FinalQuizVegL1';
 import FinalQuizVegL2 from './screens/FinalQuizScreen/FinalQuizVegL2';
-import ColumnScreenQuiz from './screens/ColumnScreen/ColumnScreenQuiz';
+import ColumnScreenQuiz from './screens/TutorialScreens/ColumnScreen/ColumnScreenQuiz';
 
 function App() {
   return (
@@ -67,7 +65,6 @@ function App() {
           <Route path="/column-quiz" element={<> <SideBar/> <ColumnScreenQuiz /> </>} />
           <Route path="/temp-page" element={<> <SideBar/> <IntroductionScreen /> </>} />
           <Route path="/public" element={<> <SideBar/> <PublicKeyScreen/> </>} />
-          <Route path="/diffie-hellman-simulation" element={<> <SideBar/> <DiffieHellmanSimulation/> </>} />
           <Route path="/hash" element={<> <SideBar/> </>} />
         
           <Route path="/selection/:category" element={<SelectionLevelScreen />} />

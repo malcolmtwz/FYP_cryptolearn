@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import QuizComponent from "../../components/Quiz/QuizComponent";
 import vegetable from "../../data/vegetables.json"
-import BeaufortTable from "../../components/BeaufortCipherTable/BeaufortCipherTable"
+import BeaufortTable from "../../components/Tables/BeaufortCipherTable/BeaufortCipherTable"
 import BeaufortQuestions from "../../components/RandomQuestionsGenerator/BeaufortQuestions";
-import BeaufortCipherAccordion from "../../components/BeaufortCipherTable/BeaufortCipherTable";
+import BeaufortCipherAccordion from "../../components/Tables/BeaufortCipherTable/BeaufortCipherTable";
 
 function BeaufortVegLevelOneScreen() {
 

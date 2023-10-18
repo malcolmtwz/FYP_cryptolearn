@@ -1,7 +1,7 @@
 import React from "react";
 import "./SelectionLevelScreen.css";
 import { useParams } from "react-router-dom";
-import LevelButton from "../../components/LevelButton/LevelButton";
+import LevelButton from "../../components/Buttons/LevelButton/LevelButton";
 import Background from "../../components/Background/Background";
 import { style } from "d3";
 
