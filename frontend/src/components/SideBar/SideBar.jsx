@@ -41,9 +41,9 @@ const SideBar = () => {
             <NavLink exact to="/public" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon='chart-line' >Public Key Cryptography</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/hash" activeClassName="activeClicked">
+            {/* <NavLink exact to="/hash" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon='sticky-note' >Hash Functions</CDBSidebarMenuItem>
-            </NavLink>
+            </NavLink> */}
             
           </CDBSidebarMenu>
         </CDBSidebarContent>
