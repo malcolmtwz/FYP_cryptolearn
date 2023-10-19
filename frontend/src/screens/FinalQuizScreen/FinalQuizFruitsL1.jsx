@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import QuizComponent from "../../components/Quiz/QuizComponent";
-import QuizWithTableComponent from "../../components/Quiz/QuizWithTableComponent";
 import fruits from "../../data/fruits.json";
 import QuizBackground from '../../components/Background/QuizBackground';
 import FinalQuiz from "./FinalQuiz";
+import FinalQuizComponent from "./FinalQuizComponent";
 
 function FinalQuizFruitsL1() {
 
     return (
             <QuizBackground>
-                <QuizComponent quizData={fruits} levelChoice={1} cipherType={FinalQuiz} />
+                <FinalQuizComponent quizData={fruits} levelChoice={1} questionGenerator={FinalQuiz} />
             </QuizBackground>
 
     );
