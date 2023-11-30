@@ -40,6 +40,9 @@ import FinalQuizFruitsL2 from './screens/FinalQuizScreen/FinalQuizFruitsL2';
 import FinalQuizVegL1 from './screens/FinalQuizScreen/FinalQuizVegL1';
 import FinalQuizVegL2 from './screens/FinalQuizScreen/FinalQuizVegL2';
 import ColumnScreenQuiz from './screens/TutorialScreens/ColumnScreen/ColumnScreenQuiz';
+import DiffieHellmanScreen from './screens/TutorialScreens/PublicKeyScreen/DiffieHellmanScreen';
+import DiffieHellmanSimulation from './screens/TutorialScreens/PublicKeyScreen/DiffieHellmanSimulation';
+import DiffieHellmanScreen2 from './screens/TutorialScreens/PublicKeyScreen/DiffieHellmanScreen2';
 
 function App() {
   return (
@@ -65,6 +68,8 @@ function App() {
           <Route path="/column-quiz" element={<> <SideBar/> <ColumnScreenQuiz /> </>} />
           <Route path="/temp-page" element={<> <SideBar/> <IntroductionScreen /> </>} />
           <Route path="/public" element={<> <SideBar/> <PublicKeyScreen/> </>} />
+          <Route path="/diffie" element={<> <SideBar/> <DiffieHellmanScreen/> </>}/>
+          <Route path="/diffie2" element={<> <SideBar/> <DiffieHellmanScreen2 /> </>}/>
           <Route path="/hash" element={<> <SideBar/> </>} />
         
           <Route path="/selection/:category" element={<SelectionLevelScreen />} />

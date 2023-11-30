@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, TextField } from '@mui/material';
-import Background from "../../components/Background/Background";
+import Background from "../../../components/Background/Background";
+import NavigationButtonBack from "../../../components/Buttons/NavigationButtonBack/NavigationButtonBack";
 
 function DiffieHellmanSimulation() {
     // States for the prime numbers, private and public keys, and shared secret
@@ -41,7 +42,7 @@ function DiffieHellmanSimulation() {
     return (
         <Background>
             <div className="center-items">
-                <h2>Diffie-Hellman Key Exchange Simulation</h2>
+                <h2 className="title">Diffie-Hellman Key Exchange Simulation</h2>
                 <p>Let's simulate a Diffie-Hellman key exchange!</p>
                 
                 <TextField label="Generator g" value={g} onChange={(e) => setG(e.target.value)} />
@@ -57,7 +58,9 @@ function DiffieHellmanSimulation() {
                 <p>{`Bob's public key (B): ${B}`}</p>
                 <p>{`Shared secret (s): ${s}`}</p>
             </div>
+            <NavigationButtonBack to="/diffie" />
         </Background>
+        
     );
 }
 

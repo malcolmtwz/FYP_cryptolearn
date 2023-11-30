@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import { FaApple, FaCarrot } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom'; 
+import { Typography } from "@mui/material";
 
 
 
@@ -14,11 +15,10 @@ function GameScreen() {
         <div className="game-screen">
             <div className="game-background">
                 <h1 className="h-1">Welcome to the Game Section!</h1>
-                    <p className="subtitle">The game will be a 10 question quiz, and each question will reward you with 1 point! </p>
-                    <p className="subtitle">Beware! A hint for a  specific question will cost you half a point! </p>
+                    <Typography variant="h5">The game will be a 10 question quiz, and each question will reward you with 1 point! </Typography>
+                    <Typography variant="h5">Beware! A hint for a  specific question will cost you half a point! </Typography>
                     <hr className="border-line"/>
-                    <h2 className="subtitle"> Below are the 2 topics available for the quizzes, any encrypted or decrypted questions will be based on the topic!</h2>
-                
+                    <Typography variant="h5">Below are the 2 topics available for the quizzes, any encrypted or decrypted questions will be based on the topic!</Typography>
 
                 <div className="game-container">
                     <Link to="/selection/fruits">

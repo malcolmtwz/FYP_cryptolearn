@@ -5,6 +5,7 @@ import CaesarEncrypter from "../../../components/Encrypters/CaesarEncrypter/Caes
 import NavigationButton from "../../../components/Buttons/NavigationButton/NavigationButton";
 import Background from "../../../components/Background/Background";
 import CaesarTable from "../../../components/Tables/CaesarTable/CaesarTable";
+import { Typography } from "@mui/material";
 
 
 function CaesarScreen() {
@@ -17,8 +18,8 @@ function CaesarScreen() {
             <h4> Letters in the alphabets are shifted by a fixed number!</h4>
 
             <CaesarTable defaultRotation="3" keepClosed={1}/>
-            <p> Alphabets in the above table is shifted by '3'</p>
-            <p> Therefore, a plaintext 'A' would be encrypted into a ciphertext 'D'</p>
+            <Typography variant="h6"> Alphabets in the above table is shifted by '3'</Typography>
+            <Typography variant="h6"> Therefore, a plaintext 'A' would be encrypted into a ciphertext 'D' </Typography>
             
             <hr className="border-line"/>
 

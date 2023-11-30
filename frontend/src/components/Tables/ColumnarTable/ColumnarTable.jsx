@@ -12,7 +12,7 @@ import './ColumnarTable.css'
 function ColumnarTable() {
     const [rows, setRows] = useState(4);
     const [columns, setColumns] = useState(4);
-    const [data, setData] = useState(Array(4).fill(Array(4).fill('')));
+    const [data, setData] = useState(Array(4).fill().map(() => Array(4).fill('')));
 
     const handleChange = (row, col, value) => {
         const newData = [...data];

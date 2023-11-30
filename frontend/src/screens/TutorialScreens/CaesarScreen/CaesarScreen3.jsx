@@ -16,7 +16,8 @@ function CaesarScreen3() {
             <div className="caesar3-background">
                 <NavigationButtonBack to="/caesar2"/>
 
-                <h2 className = "h-2"> Quiz Time!</h2>
+                
+<h2 className = "title"> Quiz Time</h2>
                 
                 <h4> Can you decrypt this encrypted message 'CsyKsxMx', which is shifted by 4, into a proper message?</h4>
                 

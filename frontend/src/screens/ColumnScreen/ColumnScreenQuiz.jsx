@@ -10,7 +10,8 @@ function ColumnScreenQuiz() {
         <div className="caesar2-screen">
             <div className="caesar2-background">
                 
-                <h2 className = "h-2"> Quiz Time!</h2>
+                
+<h2 className = "title"> Quiz Time</h2>
                 <h4> Can you encrypted 'QUIZTIME' into a message with the Key being 'KEY'?</h4>
                 
                 <hr className="border-line"/>

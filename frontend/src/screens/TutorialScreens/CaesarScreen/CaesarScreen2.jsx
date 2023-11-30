@@ -16,7 +16,8 @@ function CaesarScreen2() {
         <div className="caesar2-screen">
             <div className="caesar2-background">
                 
-                <h2 className = "h-2"> Quiz Time!</h2>
+                
+<h2 className = "title"> Quiz Time</h2>
                 <h4> Can you encrypted 'QuizTime' into a message shifted by 2?</h4>
                 
                 <hr className="border-line"/>

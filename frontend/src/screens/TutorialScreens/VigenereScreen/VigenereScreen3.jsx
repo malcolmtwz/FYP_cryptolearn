@@ -11,7 +11,8 @@ function VigenereScreen3() {
 
     return(
     <Background>
-        <h2 className = "h-2"> Quiz Time!</h2>
+        
+<h2 className = "title"> Quiz Time</h2>
         <h4> Can you decrypt the Encrypted, 'ISSQSRSX'?</h4>
         <h4> Let our 'Keyword' be 'KEY'!</h4>
         

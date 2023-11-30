@@ -6,6 +6,7 @@ import ColumnEncrypter from "../../../components/Encrypters/ColumnEncrypter/Colu
 import AlphabetTable from "../../../components/Tables/AlphabetTable/AlphabetTable";
 import ColumnExampleTable from "../../../components/Tables/ColumnExampleTable/ColumnExampleTable";
 import ColumnExampleTable2 from "../../../components/Tables/ColumnExampleTable2/ColumnExampleTable2";
+import ColumnarTable from "../../../../src/components/Tables/ColumnarTable/ColumnarTable";
 
 function ColumnScreen() {
 
@@ -37,6 +38,8 @@ function ColumnScreen() {
             <hr className="border-line"/>
             
             <ColumnEncrypter />
+
+            <ColumnarTable />
 
             <hr className="border-line"/>
 
