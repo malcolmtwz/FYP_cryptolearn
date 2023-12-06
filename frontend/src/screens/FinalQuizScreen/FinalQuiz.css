@@ -1,0 +1,23 @@
+.quiz-title {
+    color: #383838;
+    font-family: Handlee, Helvetica;
+    font-size: 94.3px;
+    font-weight: 400;
+    letter-spacing: -4.71px;
+    line-height: normal;
+    text-align: center;
+    white-space: nowrap;
+    margin: 2%;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.h-1 {
+    color: #383838;
+    font-family: "Simple Handmade", Helvetica;
+    border-bottom: 5px solid var(--black);
+    padding: 20px;
+    margin-top: 0px;
+    font-size: 3em;
+    font-weight: 100;
+}

@@ -49,6 +49,16 @@
   animation: fadeIn 0.5s ease-in-out forwards;
 }
 
+.h-1 {
+  color: #383838;
+  font-family: "Simple Handmade", Helvetica;
+  border-bottom: 5px solid var(--black);
+  padding: 20px;
+  margin-top: 0px;
+  font-size: 3em;
+  font-weight: 100;
+}
+
 .border-line{
   border: 2px solid var(--primary);
   width: 50vw;

@@ -2,11 +2,11 @@ import React, { useState, useEffect, useContext  } from 'react';
 import { Button, CardActions, CardContent, Container, Typography, Card, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@mui/material';
 import CipherContext from '../../screens/FinalQuizScreen/CipherContext';
 
-const QuestionsComponent = ({
+const FinalQuestionsComponent = ({
   currentQuestion,
   questions,
   onAnswer,
-  onSkip,
+  onSkip
 }) => {
 
     console.log('currentQuestion:', currentQuestion);
@@ -17,28 +17,37 @@ const QuestionsComponent = ({
     const [submitDialogOpen, setSubmitDialogOpen] = useState(false);
     const [hintDialogOpen, setHintDialogOpen] = useState(false);
     const [onCorrectAnswer, setCorrectanswer] = useState(false);
-    const [hintUsed, setHintUsed] = useState(false);
-
+    const [hintsUsed, setHintsUsed] = useState(0);
+  
+    
     const handleAnswer = () => {
-        console.log('userAnswer:', userAnswer);
-        console.log('correctAnswer:', questions.answer);
-
-        const points = hintUsed ? 0.5 : 1;
+        // Check if the answer is correct
         if (userAnswer.toLowerCase() === questions.answer.toString().toLowerCase()) {
-            onAnswer(points);
+            // Pass whether a regular hint was used and that the answer is correct
+            onAnswer(userAnswer, hintsUsed > 0, true); 
             setCorrectanswer(true);
             setSubmitDialogOpen(true);
-                setHintDialogOpen(false);
-        } else{
+            setHintDialogOpen(false);
+        } else {
+            // Pass that the answer is incorrect
+            onAnswer(userAnswer, hintsUsed > 0, false);
             setSubmitDialogOpen(true);
         }
         
+        // Reset hint count for the next question
+        setHintsUsed(0);
+
     };
 
-    const handleHint = () => {
-        setHintUsed(true);
-        setHintDialogOpen(true);
-    }
+    const handleHintRequest = () => {
+        setHintsUsed(hintsUsed + 1);
+        setHintDialogOpen(true); // Open the hint dialog for regular hints
+    };
+
+
+    const handleCipherHintRequest = () => {
+        setHintsUsed(hintsUsed + 1);
+    };
 
     const handleCloseSubmitDialog = () => {
         if (onCorrectAnswer){
@@ -80,7 +89,7 @@ const QuestionsComponent = ({
             <Button variant='contained' color='primary' onClick={handleAnswer}>
                 Submit Answer
             </Button>
-            <Button variant='outlined' color='secondary' onClick={handleHint}>
+            <Button variant='outlined' color='secondary' onClick={handleHintRequest}>
                 Request Hint
             </Button>
             <Button variant='outlined' onClick={onSkip}>
@@ -120,4 +129,4 @@ const QuestionsComponent = ({
   );
 };
 
-export default QuestionsComponent;
+export default FinalQuestionsComponent;

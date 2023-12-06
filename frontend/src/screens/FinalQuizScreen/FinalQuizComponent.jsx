@@ -1,11 +1,11 @@
 import React, { useState, useEffect }  from 'react'
 import { Button, Container, Typography } from '@mui/material';
-import QuestionsComponent from '../../components/Question/QuestionsComponent';
+import FinalQuestionsComponent from './FinalQuestionsComponent';
 import ColumnarTable from '../../components/Tables/ColumnarTable/ColumnarTable';
 import BeaufortCipherAccordion from '../../components/Tables/BeaufortCipherTable/BeaufortCipherTable';
 import VigenereCipherAccordion from '../../components/Tables/VigenereTable/VigenereCipherTable';
 import CaesarTable from '../../components/Tables/CaesarTable/CaesarTable';
-import AccordionComponent from '../../components/AccordianComponent/AccordianComponent';
+import './FinalQuiz.css';
 
 
 // Generate count number of random questions based on quizData
@@ -82,6 +82,12 @@ const FinalQuizComponent = ({quizData,levelChoice,questionGenerator}) => {
     const [questions, setQuestions] = useState([]);
     const [score, setScore] = useState(0);
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [hintUsed, setHintUsed] = useState(false);
+    const [showHintTables, setShowHintTables] = useState(false);
+    const [cipherHintUsed, setCipherHintUsed] = useState(false);
+    // const [totalScore, setTotalScore] = useState(0);
+    // const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    
 
     useEffect(() => {
         // generates 10 random questions and put into constant 'questions'
@@ -90,10 +96,23 @@ const FinalQuizComponent = ({quizData,levelChoice,questionGenerator}) => {
         // console.log(randomQuestions)
     }, [quizData]);
 
-    const handleAnswer = (points) => {
-        setScore(score + points);
-        loadNextQuestion();
-    }
+    
+
+    const handleAnswer = (userAnswer, regularHintUsed, isCorrect) => {
+        if (isCorrect) {
+            let points = 1;
+            if (regularHintUsed && cipherHintUsed) {
+                points = 0.25; // Both hints used
+            } else if (regularHintUsed || cipherHintUsed) {
+                points = 0.5; // Either hint used
+            } else if (!regularHintUsed || !cipherHintUsed){
+                points = 1
+            }
+            setScore(score + points);
+            loadNextQuestion();
+        }
+        
+    };
 
     const handleSkip = () => {
         loadNextQuestion();
@@ -108,29 +127,42 @@ const FinalQuizComponent = ({quizData,levelChoice,questionGenerator}) => {
 
     const loadNextQuestion = () => {
         setCurrentQuestion(currentQuestion + 1);
+        setShowHintTables(false);
+    };
+
+    const handleRequestHint = () => {
+        setCipherHintUsed(true);
+        setShowHintTables(!showHintTables); // Toggle the visibility of the hint tables
     };
 
     return(
         <Container maxWidth='md'>
         {currentQuestion < questions.length ? (
             <div>
-                <QuestionsComponent
+                <FinalQuestionsComponent
                     currentQuestion={currentQuestion}
                     questions={questions[currentQuestion]}
                     onAnswer={handleAnswer}
                     onSkip={handleSkip}
                 />
                 {/* Render the corresponding table based on cipher type */}
-                <AccordionComponent title="Request Cipher Hint">
-                    {questions[currentQuestion].cipherType === 'Caesar' && <CaesarTable />}
-                    {questions[currentQuestion].cipherType === 'Columnar' && <ColumnarTable />}
-                    {questions[currentQuestion].cipherType === 'Beaufort' && <BeaufortCipherAccordion />}
-                    {questions[currentQuestion].cipherType === 'Vigenere' && <VigenereCipherAccordion />}
-                </AccordionComponent>
+                {questions[currentQuestion].cipherType !== 'Diffie-Hellman' && (
+                    <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+                        <Button variant="outlined" color="secondary" onClick={handleRequestHint}>Request Cipher Hint</Button>
+                    </div>
+                )}
+                {showHintTables && (
+                    <div>
+                        {questions[currentQuestion].cipherType === 'Caesar' && <CaesarTable />}
+                        {questions[currentQuestion].cipherType === 'Columnar' && <ColumnarTable />}
+                        {questions[currentQuestion].cipherType === 'Beaufort' && <BeaufortCipherAccordion />}
+                        {questions[currentQuestion].cipherType === 'Vigenere' && <VigenereCipherAccordion />}
+                    </div>
+                )}
             </div>
         ) : (
             <div className='center-items'>
-                <Typography className='h-1'>Quiz Completed!</Typography>
+                <Typography className='quiz-title'>Quiz Completed!</Typography>
                 <Typography className='display-score'>Your score: {score}/10</Typography>
                 <Button variant='contained' color='primary' onClick={handleRetry} size="large">
                 Retry
