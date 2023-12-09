@@ -17,5 +17,8 @@
     "react-mathjax2": "^0.0.2",
     "react-sizeme": "^3.0.2",
     "styled-components": "^6.0.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
