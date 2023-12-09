@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cryptolearn/static/css/main.a5efb381.css",
-    "main.js": "/cryptolearn/static/js/main.3499a091.js",
+    "main.js": "/cryptolearn/static/js/main.dbd97c82.js",
     "static/media/fa-solid-900.svg": "/cryptolearn/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/cryptolearn/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
     "static/media/fa-solid-900.eot": "/cryptolearn/static/media/fa-solid-900.9bbb245e67a133f6e486.eot",
@@ -84,10 +84,10 @@
     "index.html": "/cryptolearn/index.html",
     "static/media/aboutusImage.svg": "/cryptolearn/static/media/aboutusImage.e4e4abdbdf66a4cad97b66d0ab027a98.svg",
     "main.a5efb381.css.map": "/cryptolearn/static/css/main.a5efb381.css.map",
-    "main.3499a091.js.map": "/cryptolearn/static/js/main.3499a091.js.map"
+    "main.dbd97c82.js.map": "/cryptolearn/static/js/main.dbd97c82.js.map"
   },
   "entrypoints": [
     "static/css/main.a5efb381.css",
-    "static/js/main.3499a091.js"
+    "static/js/main.dbd97c82.js"
   ]
 }
