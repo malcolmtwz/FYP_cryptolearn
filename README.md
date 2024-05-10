@@ -28,7 +28,7 @@
     <a href="https://github.com/malcolmtwz/cryptolearn"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="malcolmtwz.github.io/cryptolearn/">View Demo</a>
+    <a href="https://malcolmtwz.github.io/cryptolearn/">View Demo</a>
     ·
     <a href="https://github.com/malcolmtwz/cryptolearn/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
