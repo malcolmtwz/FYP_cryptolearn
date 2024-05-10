@@ -71,8 +71,6 @@ This project aims to provide developers an opportunity to learn cryptography alg
 3. Gamify encryption algorithms using puzzles with increasing levels of difficulty.
 4. Assess the effectiveness of the web application.
 
-https://malcolmtwz.github.io/cryptolearn/
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
