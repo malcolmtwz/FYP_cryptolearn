@@ -177,7 +177,7 @@ After selecting their preferred topics, cipher types, and difficulty levels, use
 
 In this segment of the application, users are presented with a series of encrypted texts. Their primary objective is to apply their knowledge from the tutorials to decipher these texts, submitting their plaintext values through an input box. The design choice to focus solely on uppercase values serves to create a more streamlined and focused learning experience. To aid users in their endeavors, each quiz is accompanied by a corresponding cipher table, located at the bottom of the screen. This table not only serves as a handy reference tool but also as a bridge connecting new knowledge with previous learning experiences from the tutorials.
 
-_For full usage, please refer to the <a href="https://malcolmtwz.github.io/documentation/FYP_report_Malcolm" target="_blank">Documentation</a>
+_For full usage, please refer to the [Documentation](documentations/FYP_report_Malcolm)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
