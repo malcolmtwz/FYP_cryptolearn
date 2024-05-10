@@ -127,6 +127,7 @@ This button is strategically designed to attract newcomers, gently ushering them
 
 Aimed at seasoned users, this button serves as an invitation to challenge and validate their understanding.
 
+![screenshot](homescreen.png)
 
 The navigation bar will consistently appear across the application, ensuring users have a familiar point of reference regardless of their location within the interface. Additionally, both the 'Start Learning!' and 'Notes' buttons on the navigation bar will direct users to the same screen. Similarly, the 'Test your Skills!' and 'Game' buttons will lead to an identical screen experience. By ensuring such consistent navigation pathways, we aim to create an environment where learning is not just effective but also effortlessly enjoyable.
 
