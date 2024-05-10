@@ -115,9 +115,23 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+HomeScreen.js
+The Home Screen is the welcoming interface of our application. Designed with user-friendliness in mind, it greets every visitor with a warm message, setting the tone for an immersive educational journey. 
+Central to this screen are two prominently placed buttons:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+**‘Start Learning!’**
+
+This button is strategically designed to attract newcomers, gently ushering them into the world of knowledge contained within the app.
+
+**‘Test your Skills!’**
+
+Aimed at seasoned users, this button serves as an invitation to challenge and validate their understanding.
+
+
+The navigation bar will consistently appear across the application, ensuring users have a familiar point of reference regardless of their location within the interface. Additionally, both the 'Start Learning!' and 'Notes' buttons on the navigation bar will direct users to the same screen. Similarly, the 'Test your Skills!' and 'Game' buttons will lead to an identical screen experience. By ensuring such consistent navigation pathways, we aim to create an environment where learning is not just effective but also effortlessly enjoyable.
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
