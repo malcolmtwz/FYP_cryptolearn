@@ -126,10 +126,25 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [x] Home Screen
+- [x] Navigation Bar
+- [x] Notes Screen
+  - [x] Caesar Cipher Tutrorial
+    - [x] Interactive Caesar Cipher Table
+  - [x] Beaufort Cipher Tutorial
+    - [x] Interactive Beaufort Cipher Table
+  - [x] Vigenere Cipher Tutorial
+    - [x] Interactive Vigenere Cipher Table
+  - [x] Columnar Transposition Tutorial
+    - [x] Interactive Columnar Transpostion Table
+  - [x] Public Key Cryptography Tutorial
+    - [x] Interactive Public Key Encryption Demo
+- [x] Games Screen
+  - [x] Choose between Topic: Fruits or Vegetables
+    - [x] Choose Quiz Type: Caesar, Beaufort, Vigenere, Columnar, Final
+      - [x] Choose Levels: Encryption or Decryption
+- [x] About Us Screen
+    
 
 See the [open issues](https://github.com/malcolmtwz/cryptolearn/issues) for a full list of proposed features (and known issues).
 
