@@ -115,7 +115,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-HomeScreen.js
+### HomeScreen.js
 The Home Screen is the welcoming interface of our application. Designed with user-friendliness in mind, it greets every visitor with a warm message, setting the tone for an immersive educational journey. 
 Central to this screen are two prominently placed buttons:
 
@@ -127,11 +127,55 @@ This button is strategically designed to attract newcomers, gently ushering them
 
 Aimed at seasoned users, this button serves as an invitation to challenge and validate their understanding.
 
-![screenshot](homescreen.png)
+![screenshot](/screenshots/homeScreen.png)
 
 The navigation bar will consistently appear across the application, ensuring users have a familiar point of reference regardless of their location within the interface. Additionally, both the 'Start Learning!' and 'Notes' buttons on the navigation bar will direct users to the same screen. Similarly, the 'Test your Skills!' and 'Game' buttons will lead to an identical screen experience. By ensuring such consistent navigation pathways, we aim to create an environment where learning is not just effective but also effortlessly enjoyable.
 
+### NotesScreen.js
 
+When a user selects either the ‘Start Learning!’ or the ‘Notes’ buttons in the application, they are ushered into the introduction page of the tutorial screens. This introductory page is designed to orient users to the Sidebar, which is consistently positioned on the left of all tutorial screens. The Sidebar is the primary navigation tool for users to choose and delve into different ciphers.  
+
+![screenshot](/screenshots/tutorialScreen.png)
+
+As illustrated above, the main screen intuitively directs users to select their desired cipher from the Sidebar. For those unfamiliar with the ciphers, we recommend starting from the top and progressing downward. This sequence is intentional, as the list is organized in increasing order of cipher complexity or uniqueness. Our design philosophy prioritizes user-friendliness, and this approach is consistently applied throughout the tutorial screens.
+An added advantage of our Sidebar design is its modularity. As we introduce new ciphers to the application, they can be seamlessly integrated into the existing navigation structure, ensuring that updates are both efficient and non-disruptive for users.
+
+### GamesScreen.js
+
+Upon entering the Games Introduction screen, users are greeted with an insight into the heart of our application: the game quizzes. 
+
+![screenshot](/screenshots/gameScreen.png)
+
+This is what they can expect:
+
+1) **Purpose**
+
+This screen serves as a gateway to our quizzes. Whether a user clicks on 'Test your Skills!' or 'Game' from the main menu, they will be navigated to this introduction page.
+
+2) **Points System Overview**
+
+Before diving into the quizzes, users are briefed about the point system, helping them understand how their performance will be evaluated.
+
+3) **Topic Selection**
+
+We believe in giving our users choices. Therefore, on this screen, they can select from two distinct topics for their quiz: fruit names and vegetables names. These topics are chosen due to being universally recognized and simple to grasp. It ensures that users of all ages and backgrounds can enjoy the game without any prerequisites.
+
+### Caesar Tutorial
+
+The Caesar Cipher is the first selection in our tutorial screen and is meant to be the first cipher taught to new users and beginners in cryptography. Therefore, it is important for the project to create a baseline knowledge for new users to work with.
+
+A quick tutorial is given to the user at the start of the Caesar Cipher page as seen below. The example below shows an alphabet shift for rotational value of 3. The default rotation value of the Caesar Table component is set to 3 for this example, but users can adjust the key by either dragging the bar or typing in their desired value. This would be a key component used in further game-based designs as it provides new user with an interactable interface specially created for Caesar Cipher. 
+
+![screenshot](/screenshots/caesarCipher.png)
+
+
+### Caesar Quiz
+
+After selecting their preferred topics, cipher types, and difficulty levels, users commence the quiz. Each quiz comprises 10 randomized questions, with keys or rotational values assigned based on the cipher type. As the formats across quizzes are largely uniform, the Caesar Cipher Quiz will be used as a demonstration in the figures below to illustrate the quiz section's mechanics.
+
+![screenshot](/screenshots/caesarQuiz.png)
+
+In this segment of the application, users are presented with a series of encrypted texts. Their primary objective is to apply their knowledge from the tutorials to decipher these texts, submitting their plaintext values through an input box. The design choice to focus solely on uppercase values serves to create a more streamlined and focused learning experience. To aid users in their endeavors, each quiz is accompanied by a corresponding cipher table, located at the bottom of the screen. This table not only serves as a handy reference tool but also as a bridge connecting new knowledge with previous learning experiences from the tutorials.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
